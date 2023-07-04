@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "chef": "Paulo Rocha",
+        "nome_tecnico": "Banoffee de Nutella",
+        "nome_venda": "Banoffee de Nutella",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "Base",
+                "ingredientes": [
+                    ["Cacau em Pó 100%", 2, 53.98, 0.11],
+                    ["Biscoito Maisena", 145, 18.95, 2.75],
+                    ["Raspas de 1 Limão Tahiti", 100, 4.87, 0.49],
+                    ["Noz Moscada em Pó", 1, 848.75, 0.85],
+                    ["Manteiga sem Sal", 84, 67.98, 5.71]
+
+                ]
+            },
+            {
+                "tipo": "Recheio",
+                "ingredientes": [
+                    ["Banana Prata Madura", 35, 13.48, 0.47 ],
+                    ["Creme de Leite Fresco (batido em ponto chantilly)", 134, 51.38, 6.88 ],
+                    ["Canela em Pó", 7,	 216.33, 1.51 ],
+                    ["Nutella", null, 54.66, null, 60, 3.28]
+                ]
+            },
+            {
+                "tipo": "Decoração",
+                "ingredientes": [
+                    ["Chips de Banana", "3 unidades", 0.12, 0.00],
+                    ["Canela em Pó com açúcar", 5, 216.33, 1.08]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.570, 
+            "peso_porcao_kg": 0.190,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 25.70
+        },
+        "modo_preparo":[
+            "Primeiro, vamos fazer a massa da Banoffee. Começamos triturando a bolacha maisena, até obter textura de farinha.",
+            "Misture essa farinha com a manteiga em temperatura ambiente.",
+            "Acrescente as raspas do limão, a noz moscada, o cacau em pó e a canela.",
+            "Misture tudo com a mão, até obter uma massa bem úmida.",
+            "Espalhe essa massa em uma assadeira e leve ao forno à 150°C por 15 minutos.",
+            "Enquanto ela assa, já vamos bater o creme de leite fresco até obter o ponto de chantilly - e cortar nossas bananas em rodelas.",
+            "Por fim, vamos montar nossas verrines de banoffee: vamos esfarelar a massa pronta no fundo dos copos. Na sequência, coloque as rodelas de banana decorando as laterais. Preencha com a Nutella (60g). Cubra com o chantilly.",
+            "Um toque de canela e o chips de banana vão dar aquele charme especial para a sua banoffee."
+        ],
+        "textos":{
+            "usuario_usando_demais":"VOCÊ ESTÁ USANDO NUTELLA DEMAIS! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus.",
+            "usuario_na_margem":"VOCÊ ESTÁ USANDO A QUANTIDADE IDEAL DE NUTELLA! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus.",
+            "usuario_usando_menos":"VOCÊ ESTÁ USANDO POUCA NUTELLA! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus."
+        }
+    }
+]
