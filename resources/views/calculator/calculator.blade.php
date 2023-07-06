@@ -38,30 +38,9 @@
                             @foreach($row->ingredientes as $ingredientes)
                                 <tr>
                                     <td class="pl-5">{{$ingredientes[0]}}</td>
-                                    <td>
-                                        @if(!is_null($ingredientes[1]))
-                                            {{$ingredientes[1]}}
-                                        @else
-                                            <div class="d-flex align-items-center">
-                                                <input required type="number" id="qtd_nutella"
-                                                name="qtd_nutella" class="use-keyboard-input bg-dark text-light mr-2 form-control w-50"/>
-                                                <span>(g)</span>
-                                            </div>
-                                        @endif
-                                    </td>
+                                    <td>{{$ingredientes[1]}}</td>
                                     <td>R${{str_replace('.', ',', $ingredientes[2])}}</td>
-                                    <td>
-                                        @if(!is_null($ingredientes[3]))
-                                            R${{str_replace('.', ',', $ingredientes[3])}}
-                                        @else
-                                            <div>
-                                                <input type="hidden" value="{{$ingredientes[2]}}" id="valor_total_nutella" />
-                                                <input type="hidden" value="" name="input_valor_bruto_nutella" id="input_valor_bruto_nutella" />
-                                                <span id="bruto_nutella">R$ -</span>
-                                            </div>
-                                        @endif
-                                    
-                                    </td>
+                                    <td>R${{str_replace('.', ',', $ingredientes[3])}}</td>
                                 </tr>
                             @endforeach
                         @endforeach
@@ -82,17 +61,17 @@
         </form>
         <script>
             // Seleciona o campo de entrada
-            const qtd_nutella = document.getElementById('qtd_nutella');
-            const bruto_nutella = document.getElementById('bruto_nutella');
-            const valor_total_nutella = document.getElementById('valor_total_nutella').value;
-            const input_valor_bruto_nutella = document.getElementById('input_valor_bruto_nutella');
+            // const qtd_nutella = document.getElementById('qtd_nutella');
+            // const bruto_nutella = document.getElementById('bruto_nutella');
+            // const valor_total_nutella = document.getElementById('valor_total_nutella').value;
+            // const input_valor_bruto_nutella = document.getElementById('input_valor_bruto_nutella');
 
-            qtd_nutella.addEventListener('input', function(event) {
-                const valorDigitado = event.target.value;
-                let resultado_conta = parseFloat((valorDigitado / 1000) * valor_total_nutella);
-                bruto_nutella.innerHTML = `R$${String(resultado_conta.toFixed(2)).replace('.', ',')}`
-                input_valor_bruto_nutella.value = resultado_conta
-            });
+            // qtd_nutella.addEventListener('input', function(event) {
+            //     const valorDigitado = event.target.value;
+            //     let resultado_conta = parseFloat((valorDigitado / 1000) * valor_total_nutella);
+            //     bruto_nutella.innerHTML = `R$${String(resultado_conta.toFixed(2)).replace('.', ',')}`
+            //     input_valor_bruto_nutella.value = resultado_conta
+            // });
         </script>
     @else
         <div style="display:flex;justify-content:center;align-items:center;height:80vh;width:100%">

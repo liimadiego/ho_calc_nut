@@ -54,27 +54,27 @@ class CalculatorController extends Controller
             }
         }
 
-        $userResult = $this->getResult($receita_selecionada, $receita_id, $dados, true);
-        $defaultResult = $this->getResult($receita_selecionada, $receita_id, $dados, false);
+        // $userResult = $this->getResult($receita_selecionada, $receita_id, $dados);
+        $defaultResult = $this->getResult($receita_selecionada, $receita_id, $dados);
 
-        if($defaultResult['qtd_nutella_ideal'] < $dados['qtd_nutella']){
-            $texto_ideal = $receita_selecionada->textos->usuario_usando_demais;
-        }elseif($defaultResult['qtd_nutella_ideal'] == $dados['qtd_nutella']){
-            $texto_ideal = $receita_selecionada->textos->usuario_na_margem;
-        }else{
-            $texto_ideal = $receita_selecionada->textos->usuario_usando_menos;
-        }
+        // if($defaultResult['qtd_nutella_ideal'] < $dados['qtd_nutella']){
+        //     $texto_ideal = $receita_selecionada->textos->usuario_usando_demais;
+        // }elseif($defaultResult['qtd_nutella_ideal'] == $dados['qtd_nutella']){
+        //     $texto_ideal = $receita_selecionada->textos->usuario_na_margem;
+        // }else{
+        //     $texto_ideal = $receita_selecionada->textos->usuario_usando_menos;
+        // }
 
         // dd(compact('userResult', 'defaultResult', 'dados', 'receita_selecionada'));
 
-        return view('calculator.result', compact('userResult', 'defaultResult', 'dados', 'receita_selecionada', 'texto_ideal'));
+        return view('calculator.result', compact('defaultResult', 'dados', 'receita_selecionada'));
         
     }
 
     /**
      * Display a listing of the resource.
      */
-    public function getResult($receita_selecionada, $receita_id, $dados , $userResult)
+    public function getResult($receita_selecionada, $receita_id, $dados)
     {
         $calc = 0;
         $qtd_nutella_ideal = 0;
@@ -82,19 +82,19 @@ class CalculatorController extends Controller
         foreach($receita_selecionada->receita as $rec){
             foreach($rec->ingredientes as $ing){
                 
-                if(!$userResult && isset($ing[5])){
-                    $calc += $ing[5];
-                    $qtd_nutella_ideal = $ing[4];
-                }else{
+                // if(!$userResult && isset($ing[5])){
+                //     $calc += $ing[5];
+                //     $qtd_nutella_ideal = $ing[4];
+                // }else{
                     $calc += $ing[3];
-                }
+                // }
                 
             }
         }
 
-        if($userResult){
-            $calc += $dados['input_valor_bruto_nutella'];
-        }
+        // if($userResult){
+            // $calc += $dados['input_valor_bruto_nutella'];
+        // }
 
         $custo_por_kg = $calc / $receita_selecionada->dados->rendimento_kg;
         $qtd_porcoes = $receita_selecionada->dados->rendimento_kg / $receita_selecionada->dados->peso_porcao_kg;

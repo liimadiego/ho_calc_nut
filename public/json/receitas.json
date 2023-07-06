@@ -23,7 +23,7 @@
                     ["Banana Prata Madura", 35, 13.48, 0.47 ],
                     ["Creme de Leite Fresco (batido em ponto chantilly)", 134, 51.38, 6.88 ],
                     ["Canela em Pó", 7,	 216.33, 1.51 ],
-                    ["Nutella", null, 54.66, null, 60, 3.28]
+                    ["Nutella", 60, 54.66, 3.28]
                 ]
             },
             {
