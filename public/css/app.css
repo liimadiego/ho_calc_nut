@@ -1,60 +1,88 @@
-.titulo{
-    margin: 40px 0 30px 0;
+:root {
+    --primary-color: #E33530;
 }
 
-header{
-    background-color: #e33530;
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.titulo {
+    margin: 40px 0 30px 0;
+    color: var(--primary-color);
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 28px;
+    border-bottom: #653817 2px solid;
+    padding-bottom: 10px;
+    max-width: 50%;
+    padding-left: 55px;
+}
+
+.titulo .r {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+header {
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 0;
 }
 
-header img{
+header img {
     filter: drop-shadow(0 0 0 #fff);
     width: 600px;
     max-width: 40%;
 }
 
-footer{
+footer {
     background-color: #1a171b;
 }
 
-.page_title_division{
+.page_title_division {
     background:
-    linear-gradient(
-      #653817c9,#653817c9
-    ),
-    url('../img/receita\ \(1\).jpg');
+        linear-gradient(#653817c9, #653817c9),
+        url('../img/receita\ \(1\).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95px;
     color: #fff;
-    padding: 0 10%;
+    padding: 20px 10%;
     display: flex;
     align-items: center;
 }
 
-.page_title_division h2{
+.page_title_division h2 {
     padding: 10px 0;
     font-size: 18pt;
     margin: 0;
     text-align: center;
 }
 
-.calculator_title{
+.subtitle {
+    font-size: 24px;
+}
+
+.card {
+    border-radius: 22px;
+    box-shadow: 10px 10px 20px #8F90916F;
+}
+
+.calculator_title {
     text-align: center;
     padding: 30px 0;
     font-size: 20pt;
     font-weight: bold;
 }
 
-.item-receita{
-    display:flex;
+.item-receita {
+    display: flex;
     width: 25%;
 }
-.titulos .item-receita{
+
+.titulos .item-receita {
     background: #343a40;
     color: #fff;
     display: flex;
@@ -63,119 +91,583 @@ footer{
     justify-content: center;
     padding: 8px 0;
 }
-.titulos .item-receita i{
+
+.titulos .item-receita i {
     margin-left: 5px;
 }
 
-.item-receita input{
+.item-receita input {
     width: 100%;
     padding: 0 10px;
 }
 
-.item-receita select{
+.item-receita select {
     width: 20%;
     min-width: 66.94px;
 }
 
-.calcular-preco{
+.calcular-preco {
+    margin-top: 25px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     padding: 30px 0;
+    background-image: url('../img/bg_calc.png');
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.calcular-preco > div{
+.calcular-preco>div {
     display: flex;
 }
 
-.calcular-preco button{
-    min-width: 250px;
-    height: 38px;
+.calcular-preco button {
+    font-size: 22px;
 }
 
-.calcular-preco input{
+.calcular-preco input {
     min-width: 250px;
 }
 
-.calcular-preco-left, .calcular-preco-right{
+.calcular-preco-left,
+.calcular-preco-right {
     display: flex;
 }
 
-.calcular-preco-right{
+.calcular-preco-right {
     justify-content: flex-end;
 }
 
-.box{
+.btn_primary {
+    background-color: var(--primary-color);
+    border-radius: 50vw;
+    color: #fff;
+    border: none;
+}
+
+.resumo_case table>tbody>tr:nth-child(1)>th {
+    background-color: var(--primary-color);
+    border-radius: 10px 0 0 0;
+}
+
+.box {
     width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.box-left{
+.box-left {
     padding-right: 7.5px;
 }
 
-.box-right{
+.box-right {
     padding-left: 7.5px;
 }
 
 .square {
     text-align: center;
-    padding: 20px;
+    padding: 0 0 20px 0;
     cursor: pointer;
 }
-.square > div{
+
+.square>div {
     width: 100%;
-    height: 250px;
-    display:flex;
+    height: 200px;
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-.square img{  
+
+.square img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all .3s;
+    border-radius: 22px 22px 0 0;
 }
-.square:hover img{
+
+.square:hover img {
     transform: scale(1.01);
 }
 
-.result_table{
-    width: 49%;
+.result_table {
+    max-width: 48%;
     background-color: #fff;
     padding: 20px 2%;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    padding-bottom: 0;
 }
 
-.resumo_case{
+.resumo_case {
     background-color: #f5f0dd;
     padding-bottom: 30px;
 }
 
-.result_table th, .result_table td{
+.result_table th,
+.result_table td {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 11pt;
 }
 
-.result_table th{
+.result_table th {
     background-color: #1a171b;
     color: #fff;
 }
 
-.result_table td{
+.result_table td {
     text-align: end;
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
-}
-input[type=number] { 
-   -moz-appearance: textfield;
-   appearance: textfield;
 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.card_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+div.container.pt-4>div>div>a {
+    text-decoration: none;
+}
+
+footer {
+    height: 78px;
+}
+
+footer a {
+    text-decoration: none !important;
+}
+
+footer .alinhar-logo {
+    padding: 0px
+}
+
+footer div.alinhar-logo span {
+    font-size: 13px;
+}
+
+footer hr {
+    background: #787878;
+    height: 2px;
+    width: 85%;
+    margin: .5rem;
+}
+
+footer .logo-footer {
+    max-width: 80px;
+    width: 100%;
+}
+
+.heart {
+    margin: auto;
+    margin-left: 5px;
+}
+
+.btn_voltar {
+    background: var(--primary-color);
+    box-shadow: 10px 10px 20px #8F90916F;
+    width: 100%;
+    border-radius: 50vw;
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+    position: relative;
+    padding-right: 55px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn_voltar:hover {
+    color: var(--primary-color);
+    background-color: whitesmoke;
+}
+
+.btn_voltar span:before {
+    content: "n";
+    border-radius: 50vw;
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    width: 44px;
+    color: #1a171b;
+    box-shadow: 0px 3px 6px #00000029;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.icon_title span:before {
+    content: "n";
+    border-radius: 50vw;
+    background-color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 900;
+    width: 44px;
+    min-height: 44px;
+    color: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    position: absolute;
+    top: 65px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn_voltar:hover span:before {
+    color: #fff;
+    background-color: #1a171b;
+}
+
+
+.monte-sua-receita {
+    box-shadow: 0px 10px 15px #8F90916F;
+    border-radius: 22px;
+    padding: 30px;
+    position: relative;
+}
+
+.table thead th,
+.table tbody td,
+.table tbody th {
+    border: 3px #fff solid;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.table thead th {
+    background-color: #1A171B;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px 0 0 0;
+}
+
+.table tbody td {
+    background-color: #E8E8E8;
+    font-weight: 600;
+}
+
+.table tbody td.calc_base {
+    background-color: #653817;
+    padding-left: 3rem !important;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.table tbody tr:nth-child(7) td.calc_base,
+.table tbody tr:nth-child(12) td.calc_base {
+    border-top: 25px solid #fff;
+}
+
+.table tbody td.calc_base h6 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.monte-sua-receita .table tbody>tr>td:nth-child(2),
+.monte-sua-receita .table tbody>tr>td:nth-child(3),
+.monte-sua-receita .table tbody>tr>td:nth-child(4) {
+    background-color: #888888;
+    color: #fff;
+}
+
+#calcularForm>div.monte-sua-receita>table>tbody>tr:nth-child(11)>td:nth-child(1) {
+    background-color: var(--primary-color);
+}
+
+#calcularForm>div.monte-sua-receita>table>tbody>tr:nth-child(11)>td:nth-child(2) {
+    border: 1px solid var(--primary-color) !important;
+    color: #1A171B;
+    background-color: whitesmoke;
+}
+
+#calcularForm>div.monte-sua-receita>table>tbody>tr:nth-child(11)>td:nth-child(3),
+#calcularForm>div.monte-sua-receita>table>tbody>tr:nth-child(11)>td:nth-child(4) {
+    background-color: #1A171B;
+}
+
+.title_panificacao {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    padding-right: 25px;
+    border-bottom: 2px solid #653817;
+}
+
+.title_panificacao::before {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    content: url(data:image/png;base64,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);
+}
+
+.title_confeitaria {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    padding-right: 25px;
+    border-bottom: 2px solid #653817;
+}
+
+.title_confeitaria::before {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    content: url(data:image/png;base64,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);
+}
+
+.btn_plus {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 50vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.img_btn {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50vw;
+}
+
+.resumo_case table>tbody>tr:nth-child(1)>td {
+    background-color: #fff;
+}
+
+.resumo_case table>tbody>tr:nth-child(1),
+.resumo_case table>tbody>tr:nth-child(10) {
+    border-bottom: 20px solid #fff;
+}
+
+.resumo_case table>tbody>tr:nth-child(8)>th {
+    background-color: #653817;
+}
+
+.resumo_case table>tbody>tr:nth-child(8)>td,
+.resumo_case table>tbody>tr:nth-child(11)>td,
+.resumo_case table>tbody>tr:nth-child(12)>td,
+.resumo_case table>tbody>tr:nth-child(13)>td {
+    background-color: #59C030;
+}
+
+.resumo_case h5 {
+    border-bottom: #653817 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.resumo_case div:nth-child(2)>h4 {
+    border-bottom: var(--primary-color) 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 29px;
+    color: #653817;
+    display: inline-block;
+    width: 200px;
+}
+
+.max_text {
+    color: var(--primary-color);
+}
+
+.value_text {
+    color: #59C030;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.obj_text {
+    font-size: 26px;
+}
+
+.resumo_case>div>div.text-center.mt-4>a {
+    font-size: 18px;
+}
+
+.titulo_result {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: #653817 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.tag_result {
+    background: #1A171B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50vw;
+    font-weight: 500;
+}
+
+.tag_result2 {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px 15px;
+    padding-left: 5px;
+    border-radius: 50vw;
+    font-weight: 500;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tag_result2 .text_n {
+    background-color: #fff;
+    font-size: 28px;
+    border-radius: 50vw;
+    color: #1a171b;
+    font-weight: 900;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    margin-right: 5px;
+}
+
+.tag_result3 {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    font-weight: 900;
+    color: #653817;
+    border-radius: 50vw;
+    border: var(--primary-color) 2px solid;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+.price {
+    border: #707070 3px solid;
+    margin: 10px;
+    border-radius: 50vw;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 50px;
+}
+
+.price .price2 {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background: #1A171B;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 23px;
+}
+
+.price_nutella {
+    border: #653817 3px solid;
+    margin: 10px;
+    border-radius: 50vw;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 50px;
+}
+
+.price_nutella .price2 {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background: var(--primary-color);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 23px;
+}
+
+.resumo_case .price_nutella img {
+    position: absolute;
+    right: -15px;
+    top: 10px;
+}
+
+@media(max-width:767px) {
+    .titulo {
+        max-width: 100%;
+    }
+
+    .result_table {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .titulo_result {
+        width: 100%;
+    }
+
+    .monte-sua-receita {
+        overflow: scroll;
+    }
 }
