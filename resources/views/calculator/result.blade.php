@@ -110,7 +110,7 @@
                 <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
                 <div class="price">
                     <div class="price2">
-                        R$<br>14,70
+                        R$<br class="d-none d-md-block">14,70
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                 <img src="{{asset('img/nutella.png')}}" alt="nutella" class="img-fluid" />
                 <div class="text-left price_nutella">
                     <div class="price2">
-                        R$<br>xx,xx
+                        R$<br class="d-none d-md-block">xx,xx
                     </div>
                     <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
                 </div>
