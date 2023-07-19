@@ -3,22 +3,19 @@
 @section('content')
 
 <div class="page_title_division">
-    <h2 class="text-center w-100">Saiba qual quantidade ideal de Nutella para sua receita</h2>
+    <h2 class="text-center w-100">Resumo financeiro</h2>
 </div>
 <div class="pt-4 resumo_case">
-    <div style="padding: 0 5rem">
-        <div>
-            <h5>Resumo</h5>
-            <hr>
-        </div>
-        <div class="d-flex justify-content-between">
-            <div class="result_table">
-                Quantidade de Nutella Ideal
-                <hr>
+    <div style="padding: 0 5rem" class="container-fluid">
+        <div class="row">
+            <div class="result_table font-weight-bold col-md-6">
+                <h5 class="font-weight-bold">
+                    Resultado financeiro da receita
+                </h5>
                 <table class="table">
                     <tbody>
                         <tr>
-                            <th>Recheio Nutella</th>
+                            <th>Total Nutella® (em gramas)</th>
                             <td>{{number_format($defaultResult['qtd_nutella_ideal'],0)}}g</td>
                         </tr>
                         <tr>
@@ -72,24 +69,70 @@
                     </tbody>
                 </table>
             </div>
-        </div> 
-        <div class="mt-4">
-            <h5>Resumo Resultado</h5>
-            <hr>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. 
+            <div class="result_table font-weight-bold col-md-6">
+                <h4 class="font-weight-bold">
+                    Resumo
+                </h4>
+                <p class="obj_text">Se o seu objetivo
+                    <br class="d-none d-md-block">
+                    é atingir um
+                    <br class="d-none d-md-block">
+                    <span class="max_text">CMV máximo de 30%</span>
+                    <br class="d-none d-md-block">
+                    o preço de venda recomendado por porção deve ser de:
+                    <br class="d-none d-md-block">
+                    <span class="value_text">R$ X</span>
+                </p>
+                <div class="text-center">
+                    <img src="{{asset('img/box_nutella.png')}}" alt="nutella" class="img-fluid">
+                </div>
             </div>
-            <div class="d-flex justify-content-between mt-3">
-                <img style="width:49%" src="{{asset('img/receita (5).jpg')}}">
-                <img style="width:49%" src="{{asset('img/receita (5).jpg')}}">
+        </div>
+        <div class="mt-4 row">
+            <div class="col-md-12">
+                <p class="obj_text font-weight-bold">
+                    <span class="max_text">Você sabia?</span>
+                    <br class="d-none d-md-block">
+                    Você sabia? Que o consumidor brasileiro está disposto a pagar pelo menos
+                    <br class="d-none d-md-block">
+                    <span class="value_text">R$ 2,00</span>
+                    <b class="text-black">a mais</b> por uma receita preparada com Nutella?
+                    <br class="d-none d-md-block">
+                </p>
             </div>
-            <div class="mt-3">
-                <h5>18% pagaria até 5 reais a mais</h5>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam.
+            <div class="col-12 w-50 mt-5">
+                <h2 class="titulo_result">
+                    Veja na prática como isso funciona
+                </h2>
             </div>
-        </div> 
+            <div class="col-md-6 mt-3">
+                <span class="tag_result">Receita SEM Nutella</span>
+                <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
+                <div class="price">
+                    <div class="price2">
+                        R$<br>14,70
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <span class="tag_result2">
+                    <span class="text_n">n</span>
+                    Receita COM Nutella
+                </span>
+                <span class="tag_result3">PORÇÃO DE XXg</span>
+                <img src="{{asset('img/nutella.png')}}" alt="nutella" class="img-fluid" />
+                <div class="text-left price_nutella">
+                    <div class="price2">
+                        R$<br>xx,xx
+                    </div>
+                    <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
+                </div>
+                <br>
+                <small><b>*Preço médio de venda em São Paulo - junho 23</b></small>
+            </div>
+        </div>
         <div class="text-center mt-4">
-            <a class="btn btn-danger" href="{{route('calculadora.index')}}">Ver mais receitas</a>
+            <a class="btn btn_primary font-weight-bold px-2 pl-4" href="{{route('calculadora.index')}}">Ver mais receitas <img src="http://local.nutella/img/icon4.png" alt="icon" class="img_btn"></a>
         </div>
     </div>
 </div>

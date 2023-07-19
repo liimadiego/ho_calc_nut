@@ -82,6 +82,9 @@ class CalculatorController extends Controller
         foreach($receita_selecionada->receita as $rec){
             foreach($rec->ingredientes as $ing){
                 
+                if(isset($ing[4])){
+                    $qtd_nutella_ideal = $ing[1];
+                }
                 // if(!$userResult && isset($ing[5])){
                 //     $calc += $ing[5];
                 //     $qtd_nutella_ideal = $ing[4];
