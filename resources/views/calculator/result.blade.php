@@ -52,7 +52,7 @@
                         </tr>
                         <tr>
                             <th>PREÇO FINAL DEFINIDO</th>
-                            <td>R${{number_format($receita_selecionada->dados->preco_final,2,",",".")}}</td>
+                            <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
                         </tr>
                         <tr>
                             <th>CMV REAL (%)</th>
@@ -81,7 +81,7 @@
                     <br class="d-none d-md-block">
                     o preço de venda recomendado por porção deve ser de:
                     <br class="d-none d-md-block">
-                    <span class="value_text">R$ X</span>
+                    <span class="value_text">R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</span>
                 </p>
                 <div class="text-center">
                     <img src="{{asset('img/box_nutella.png')}}" alt="nutella" class="img-fluid">
@@ -100,36 +100,43 @@
                     <br class="d-none d-md-block">
                 </p>
             </div>
-            <div class="col-12 w-50 mt-5">
-                <h2 class="titulo_result">
-                    Veja na prática como isso funciona
-                </h2>
-            </div>
-            <div class="col-md-6 mt-3">
-                <span class="tag_result">Receita SEM Nutella</span>
-                <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
-                <div class="price">
-                    <div class="price2">
-                        R$<br class="d-none d-md-block">14,70
+
+            <!-- ===== SITUACIONAL ===== -->
+            @if(!!$defaultResult['dados_sem_nutella'])
+            <div class="row">
+                <div class="col-12 w-50 mt-5">
+                    <h2 class="titulo_result">
+                        Veja na prática como isso funciona
+                    </h2>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <span class="tag_result">Receita SEM Nutella</span>
+                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
+                    <div class="price">
+                        <div class="price2">
+                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <span class="tag_result2">
-                    <span class="text_n">n</span>
-                    Receita COM Nutella
-                </span>
-                <span class="tag_result3">PORÇÃO DE XXg</span>
-                <img src="{{asset('img/nutella.png')}}" alt="nutella" class="img-fluid" />
-                <div class="text-left price_nutella">
-                    <div class="price2">
-                        R$<br class="d-none d-md-block">xx,xx
+                <div class="col-md-6 text-center">
+                    <span class="tag_result2">
+                        <span class="text_n">n</span>
+                        Receita COM Nutella
+                    </span>
+                    <span class="tag_result3">PORÇÃO DE {{$receita_selecionada->dados->peso_porcao_kg * 1000}}g</span>
+                    <img src="{{asset('img/nutella.png')}}" alt="nutella" class="img-fluid" />
+                    <div class="text-left price_nutella">
+                        <div class="price2">
+                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}
+                        </div>
+                        <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
                     </div>
-                    <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
+                    <br>
+                    <small><b>*Preço médio de venda em São Paulo - junho 23</b></small>
                 </div>
-                <br>
-                <small><b>*Preço médio de venda em São Paulo - junho 23</b></small>
             </div>
+            @endif
+            <!-- ===== SITUACIONAL ===== -->
         </div>
         <div class="text-center mt-4">
             <a class="btn btn_primary font-weight-bold px-2 pl-4" href="{{route('calculadora.index')}}">Ver mais receitas <img src="http://local.nutella/img/icon4.png" alt="icon" class="img_btn"></a>

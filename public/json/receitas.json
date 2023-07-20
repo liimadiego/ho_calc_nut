@@ -335,5 +335,143 @@
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 27.68
         }
+    },
+    {
+        "id": 10,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Pão de queijo com NUTELLA®",
+        "nome_venda": "Pão de queijo com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "MASSA",
+                "ingredientes": [
+                    ["Polvilho doce ", 250, 9.00, 2.25],
+                    ["Polvilho azedo", 250, 9.00, 2.25],
+                    ["Água ", 125, 0.01, 0.00],
+                    ["Leite integral ", 125, 7.00, 0.88],
+                    ["Óleo vegetal ", 100, 8.00, 0.80],
+                    ["Sal ", 8, 2.98, 0.02],
+                    ["Ovos ", 150, 18.00, 2.70],
+                    ["Queijo minas curado", 300, 60.00, 18.00]
+
+                ]
+            },
+            {
+                "tipo": "RECHEIO",
+                "ingredientes": [
+                    ["Nutella", 160, 54.66, 8.75, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 1.468,
+            "peso_porcao_kg": 0.046,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 3.71
+        }
+    },
+    {
+        "id": 11,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Pão na Chapa com NUTELLA",
+        "nome_venda": "Pão na Chapa com NUTELLA",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "MASSA",
+                "ingredientes": [
+                    ["Farinha de trigo", 250, 7.00, 1.75],
+                    ["Fermento biológico", 8, 45.01, 0.36],
+                    ["Água ", 70, 0.01, 0.00],
+                    ["Sal ", 5, 2.98, 0.01],
+                    ["Manteiga sem sal", 10, 40.24, 0.40],
+                    ["Leite integral ", 70, 7.12, 0.50],
+                    ["Açúcar", 30, 4.54, 0.14]
+                    
+                ]
+            },
+            {
+                "tipo": "RECHEIO ",
+                "ingredientes": [
+                    ["Nutella", 300, 54.66, 16.5, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.743,
+            "peso_porcao_kg": 0.074,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 5.55
+        }
+    },
+    {
+        "id": 12,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Rabanada com NUTELLA®",
+        "nome_venda": "Rabanada com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Farinha de Trigo", 333, 6.99, 2.33],
+                    ["Açúcar refinado", 40, 4.39, 0.18],
+                    ["sal", 7, 2.39, 0.02],
+                    ["Fermento seco", 5, 215.00, 1.08],
+                    ["ovos", 4, 0.51, 2.04],
+                    ["Manteiga sem sal", 166, 67.98, 11.28]
+                ]
+            },
+            {
+                "tipo": "RECHEIO ",
+                "ingredientes": [
+                    ["2 ovos", 110, 10.20, 1.12],
+                    ["Leite", 200, 5.59, 1.12],
+                    ["Manteiga", 14, 67.98, 0.95],
+                    ["Açúcar", 10, 4.39, 0.04]
+                ]
+            },
+            {
+                "tipo": "DECORAÇÃO OU COBERTURA ",
+                "ingredientes": [
+                    ["Nutella", 1000, 54.66, 54.66, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 1.750,
+            "peso_porcao_kg": 0.160,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 24.94
+        }
+    },
+    {
+        "id": 13,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Tapioca com morango e NUTELLA®",
+        "nome_venda": "Tapioca com morango e NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Farinha de Tapioca", 80, 30.24, 2.42]
+                ]
+            },
+            {
+                "tipo": "RECHEIO ",
+                "ingredientes": [
+                    ["NUTELLA", 15, 55.00, 0.83, true],
+                    ["Morangos frescos picados ", 30, 23.00, 0.69 ]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.125,
+            "peso_porcao_kg": 0.125,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 13.11
+        }
     }
 ]
