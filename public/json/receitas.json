@@ -39,21 +39,301 @@
             "peso_porcao_kg": 0.190,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 25.70
-        },
-        "modo_preparo":[
-            "Primeiro, vamos fazer a massa da Banoffee. Começamos triturando a bolacha maisena, até obter textura de farinha.",
-            "Misture essa farinha com a manteiga em temperatura ambiente.",
-            "Acrescente as raspas do limão, a noz moscada, o cacau em pó e a canela.",
-            "Misture tudo com a mão, até obter uma massa bem úmida.",
-            "Espalhe essa massa em uma assadeira e leve ao forno à 150°C por 15 minutos.",
-            "Enquanto ela assa, já vamos bater o creme de leite fresco até obter o ponto de chantilly - e cortar nossas bananas em rodelas.",
-            "Por fim, vamos montar nossas verrines de banoffee: vamos esfarelar a massa pronta no fundo dos copos. Na sequência, coloque as rodelas de banana decorando as laterais. Preencha com a Nutella (60g). Cubra com o chantilly.",
-            "Um toque de canela e o chips de banana vão dar aquele charme especial para a sua banoffee."
+        }
+    },
+    {
+        "id": 2,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Bolo chiffon de Baunilha com NUTELLA® e Morangos",
+        "nome_venda": "Bolo chiffon de Baunilha com NUTELLA® e Morangos",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Leite", 83, 5.59, 0.46],
+                    ["Antimofo", 3, 119.80, 0.36],
+                    ["Essência de baunilha", 33, 449.67, 14.84],
+                    ["Farinha de Trigo", 100, 6.99, 0.7],
+                    ["Amido de milho", 27, 21.98, 0.59],
+                    ["Óleo", 75, 7.98, 0.6],
+                    ["Açúcar 1", 83, 4.39, 0.36],
+                    ["Gemas de ovos", 100, 34, 3.4],
+                    ["Açúcar 2", 63,  4.39, 0.27],
+                    ["Claras", 333,  14.57, 4.85],
+                    ["Fermento químico", 3,  37.90, 0.11]
+                ]
+            },
+            {
+                "tipo": "COBERTURA E DECORAÇÃO",
+                "ingredientes": [
+                    ["10 Morangos", 280, 23.80, 6.66],
+                    ["Nutella", 100, 54.66, 5.47, true] 
+                ]
+            }
         ],
-        "textos":{
-            "usuario_usando_demais":"VOCÊ ESTÁ USANDO NUTELLA DEMAIS! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus.",
-            "usuario_na_margem":"VOCÊ ESTÁ USANDO A QUANTIDADE IDEAL DE NUTELLA! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus.",
-            "usuario_usando_menos":"VOCÊ ESTÁ USANDO POUCA NUTELLA! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, est sit amet ullamcorper bibendum, sem elit accumsan tortor, eu congue nulla leo ac quam. Cras odio lectus, cursus sit amet dictum at, tristique at diam. In pellentesque eros a mollis tempus."
+        "dados": {
+            "rendimento_kg": 0.785,
+            "peso_porcao_kg": 0.785,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 8.06
+        }
+    },
+    {
+        "id": 3,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Cake pops com NUTELLA®",
+        "nome_venda": "Cake pops com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Açúcar", 150, 4.39, 0.66], 
+                    ["Ovos - 3 unids", 165, 10.20, 1.68], 
+                    ["Manteiga sem sal", 150, 67.98, 10.20], 
+                    ["Farinha de trigo", 150, 6.99, 1.05], 
+                    ["Fermento em pó", 4, 37.90, 0.15]
+
+                ]
+            },
+            {
+                "tipo": "COBERTURA E DECORAÇÃO",
+                "ingredientes": [
+                    ["Granulado", 50, 13.49, 0.67], 
+                    ["Nutella", 160, 54.66, 8.75, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 1.275,
+            "peso_porcao_kg": 0.106,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 23.79
+        }
+    },
+    {
+        "id": 4,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Cheesecake com NUTELLA® e frutas vermelhas",
+        "nome_venda": "Cheesecake com NUTELLA® e frutas vermelhas",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Manteiga sem sal", 145, 67.98, 9.86],
+                    ["Biscoito maisena", 200, 18.95, 3.79]
+                ]
+            },
+            {
+                "tipo": "RECHEIO",
+                "ingredientes": [
+                    ["Açúcar refinado", 240, 4.39, 1.05],
+                    ["Manteiga sem sal", 87, 67.98, 5.91],
+                    ["Ovos", 150, 10.20, 1.53],
+                    ["Gemas", 12, 34.00, 0.41],
+                    ["Creme de leite fresco", 24, 51.38, 1.23],
+                    ["Cream cheese", 600, 56.63, 33.98],
+                    ["Raspas de 1/2 limão", 100, 4.87, 0.49],
+                    ["Raspas de 1 laranja", 137, 7.18, 0.98],
+                    ["Essência de baunilha", 9, 449.67, 4.05]
+                ]
+            },
+            {
+                "tipo": "DECORAÇÃO OU COBERTURA",
+                "ingredientes": [
+                   ["6 amoras", 36, 105.30, 3.79], 
+                   ["20 mirtilos", 60, 60.38, 3.62], 
+                   ["6 framboesas", 24, 294.67, 7.07], 
+                   ["2 morangos", 56, 23.80, 1.33], 
+                   ["Nutella", 120, 54.66, 6.56, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.829,
+            "peso_porcao_kg": 0.104,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 9.65
+        }
+    },
+    {
+        "id": 5,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Choux com NUTELLA®",
+        "nome_venda": "Choux com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Massa Choux", 20, 21.31, 0.43],
+                    ["Massa Doce", 10, 33.66, 0.34]
+
+                ]
+            },
+            {
+                "tipo": "Recheio",
+                "ingredientes": [
+                    ["Nutella", 60, 54.66, 3.28, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.090,
+            "peso_porcao_kg": 0.090,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 13.47
+        }
+    },
+    {
+        "id": 6,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Crockella com NUTELLA®",
+        "nome_venda": "Crockella com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                   ["Água", 100, 0.01, 0.00], 
+                   ["Leite", 100, 5.59, 0.56], 
+                   ["Manteiga sem Sal", 100, 67.98, 6.80], 
+                   ["Farinha de Trigo", 120, 6.99, 0.84], 
+                   ["Açúcar", 8, 4.39, 0.04], 
+                   ["Ovos", 200, 10.20, 2.04]
+
+                ]
+            },
+            {
+                "tipo": "Recheio",
+                "ingredientes": [
+                    ["Nutella", 400, 54.66, 21.86, true]
+                ]
+            },
+            {
+                "tipo": "DECORAÇÂO ou COBERTURA",
+                "ingredientes": [
+                    ["Chocolate Meio Amargo Fracionado", 300, 26.59, 7.98],
+                    ["Avelãs Quebradas", 120, 85.98, 10.32]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.900,
+            "peso_porcao_kg": 0.025,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 4.2
+        }
+    },
+    {
+        "id": 7,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Croissant com NUTELLA®",
+        "nome_venda": "Croissant com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "Massa",
+                "ingredientes": [
+                    ["Farinha de trigo", 250,  7.00,  1.75],
+                    ["Fermento biológico", 8,  45.01,  0.36],
+                    ["Água", 70, 0.0,  0.01],
+                    ["Sal", 5,  2.98,  0.01],
+                    ["Manteiga sem sal", 10,  40.24,  0.40],
+                    ["Leite integral", 70,  7.12,  0.50],
+                    ["Açúcar", 30,  4.54,  0.14]
+                ]
+            },
+            {
+                "tipo": "Recheio",
+                "ingredientes": [
+                    ["Manteiga sem sal", 140, 40.24, 5.63],
+                    ["NUTELLA", 140, 55.00, 7.70, true] 
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.723,
+            "peso_porcao_kg": 0.103,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 7.86
+        }
+    },
+    {
+        "id": 8,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Mini torres de bolo com NUTELLA®",
+        "nome_venda": "Mini torres de bolo com NUTELLA®",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["1 Gema de Ovo", 18, 34.00, 0.61],
+                    ["Açúcar", 85, 4.39, 0.37],
+                    ["4 Ovos", 220, 10.20, 2.24],
+                    ["Manteiga sem Sal", 30, 67.98, 2.04],
+                    ["Farinha de Trigo Mole", 95, 6.99, 0.66],
+                    ["Sal", 1,5, 2.55, 0.00],
+                    ["Farinha de Avelã", 160, 109.95, 17.59],
+                    ["Natas", 20, 63.30, 1.27],
+                    ["Casca de Laranja Raspada", 2, 1.03, 1.03],
+                    ["Casca de Limão Raspada", 1, 2.67, 2.67]
+                ]
+            },
+            {
+                "tipo": "COBERTURA E DECORAÇÃO",
+                "ingredientes": [
+                    ["5 Avelãs", 50, 85.98, 4.30],
+                    ["2 Morangos", 15, 23.80, 0.36],
+                    ["Banana", 20, 13.48, 0.27],
+                    ["Kiwi", 20, 32.30, 0.65],
+                    ["Nutella", 150, 54.66, 8.20, true]
+
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 0.888,
+            "peso_porcao_kg": 0.089,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 14.09
+        }
+    },
+    {
+        "id": 9,
+        "chef": "CHEF PAULO ROCHA",
+        "nome_tecnico": "Panna cotta com NUTELLA® e morango",
+        "nome_venda": "Panna cotta com NUTELLA® e morango",
+        "img": "receita (1).jpeg",
+        "receita": [
+            {
+                "tipo": "BASE",
+                "ingredientes": [
+                    ["Açúcar", 300, 4.39, 1.32],
+                    ["Creme de Leite Fresco", 400, 51.38, 20.55],
+                    ["Leite", 500, 5.59, 2.80],
+                    ["Folhas de Gelatina - 14 folhas", 14, 3.60, 50.40],
+                    ["Fava de Baunilha - 1 unid", "1 unidade", 23.00, 23.00]
+                ]
+            },
+            {
+                "tipo": "DECORAÇÃO OU COBERTURA",
+                "ingredientes": [
+                    ["Creme de Leite Batido", 250, 51.38, 12.85],
+                    ["Rhum", 30, 30.99, 0.93],
+                    ["Morangos", 15, 23.80, 10.00],
+                    ["Nutella", 50, 54.66, 2.73, true]
+                ]
+            }
+        ],
+        "dados": {
+            "rendimento_kg": 2.250,
+            "peso_porcao_kg": 0.150,
+            "cmv_meta_porcentagem":	0.3,
+            "preco_final": 27.68
         }
     }
 ]

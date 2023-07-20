@@ -38,8 +38,8 @@
                 <tr>
                     <td class="pl-5">{{$ingredientes[0]}}</td>
                     <td>{{$ingredientes[1]}}</td>
-                    <td>R${{str_replace('.', ',', $ingredientes[2])}}</td>
-                    <td>R${{str_replace('.', ',', $ingredientes[3])}}</td>
+                    <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
+                    <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
                 </tr>
                 @endforeach
                 @endforeach
