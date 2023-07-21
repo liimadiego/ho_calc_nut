@@ -19,35 +19,35 @@
                             <td>{{$defaultResult['qtd_nutella_ideal']}}</td>
                         </tr>
                         <tr>
-                            <th>CUSTO TOTAL DA RECEITA</th>
+                            <th>Custo total da receita</th>
                             <td>R${{number_format($defaultResult['custo_total_receita'],2,",",".")}}</td>
                         </tr>
                         <tr>
-                            <th>CUSTO POR QUILO DA RECEITA</th>
+                            <th>Custo por quilo da receita</th>
                             <td>R${{number_format($defaultResult['custo_por_kg'],2,",",".")}}</td>
                         </tr>
                         <tr>
-                            <th>RENDIMENTO DA RECEITA (KG)</th>
+                            <th>Rendimento da receita (KG)</th>
                             <td>{{$receita_selecionada->dados->rendimento_kg}}kg</td>
                         </tr>
                         <tr>
-                            <th>PESO DA PORÇÃO</th>
+                            <th>Peso da porção</th>
                             <td>{{$receita_selecionada->dados->peso_porcao_kg}}kg</td>
                         </tr>
                         <tr>
-                            <th>Nº DE PORÇÕES</th>
+                            <th>Nº de porções</th>
                             <td>{{number_format($defaultResult['qtd_porcoes'],0,)}}</td>
                         </tr>
                         <tr>
-                            <th>CUSTOS DA PORÇÃO (CMV)</th>
+                            <th>Custos da porção (CMV)</th>
                             <td>R${{number_format($defaultResult['custo_porcao_cmv'],2,",",".")}}</td>
                         </tr>
                         <tr>
-                            <th>CMV META (%)</th>
+                            <th>CMV Meta (%)</th>
                             <td>{{number_format($defaultResult['cmv_meta'] * 100, 0)}}%</td>
                         </tr>
                         <tr>
-                            <th>PREÇO DE VENDA MÍNIMO</th>
+                            <th>Preço de venda mínimo</th>
                             <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
                         </tr>
                         <!-- <tr>
@@ -55,15 +55,15 @@
                             <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
                         </tr> -->
                         <tr>
-                            <th>CMV REAL (%)</th>
+                            <th>CMV Real (%)</th>
                             <td>{{number_format($defaultResult['cmv_real'] * 100, 0)}}%</td>
                         </tr>
                         <tr>
-                            <th>MARGEM DE CONTRIBUIÇÃO (R$)</th>
+                            <th>Margem de contribuição (R$)</th>
                             <td>R${{number_format($defaultResult['margem_contribuicao_real'],2,",",".")}}</td>
                         </tr>
                         <tr style="border-bottom: 20px solid #fff;">
-                            <th>MARGEM DE CONTRIBUIÇÃO (%)</th>
+                            <th>Margem de contribuição (%)</th>
                             <td>{{number_format($defaultResult['margem_contribuicao_porcentagem'] * 100,0)}}%</td>
                         </tr>
                         <tr style="border-top: 20px solid #fff;">
