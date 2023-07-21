@@ -56,7 +56,7 @@
 
     </div>
     <!-- -->
-    <div class="calcular-preco">
+    <div class="calcular-preco" style="background: url('{{asset('/img/' . $receita_selecionada->img)}}')">
         <div class="row w-100">
             <div class="col-md-12 d-flex justify-content-center align-items-end">
                 <button class="btn btn-dark btn_primary font-weight-bold px-5" id="btnCalcular">
