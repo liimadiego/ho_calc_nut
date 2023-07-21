@@ -13,7 +13,7 @@
     font-weight: 900;
     font-size: 28px;
     border-bottom: #653817 2px solid;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     max-width: 50%;
     padding-left: 55px;
 }
@@ -44,7 +44,7 @@ footer {
 .page_title_division {
     background:
         linear-gradient(#653817c9, #653817c9),
-        url('../img/receita\ \(1\).jpg');
+        url('../img/bg_nutella.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,6 +52,7 @@ footer {
     padding: 20px 10%;
     display: flex;
     align-items: center;
+    min-height: 162px;
 }
 
 .page_title_division h2 {
@@ -59,6 +60,7 @@ footer {
     font-size: 18pt;
     margin: 0;
     text-align: center;
+    line-height: inherit;
 }
 
 .subtitle {
@@ -75,6 +77,11 @@ footer {
     padding: 30px 0;
     font-size: 20pt;
     font-weight: bold;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-receita {
@@ -90,6 +97,21 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 8px 0;
+}
+
+.linha_custo {
+    position: absolute;
+    top: -65px;
+    right: -2px;
+}
+
+.titulos {
+    position: relative;
+}
+
+.font_32 {
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .titulos .item-receita i {
@@ -149,7 +171,11 @@ footer {
 
 .resumo_case table>tbody>tr:nth-child(1)>th {
     background-color: var(--primary-color);
-    border-radius: 10px 0 0 0;
+    border-radius: 20px 0 0 0;
+}
+
+.resumo_case table td {
+    padding: .75rem;
 }
 
 .box {
@@ -197,16 +223,26 @@ footer {
 .result_table {
     max-width: 48%;
     background-color: #fff;
-    padding: 20px 2%;
+    padding: 28px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-left: auto;
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.resumo_case {
-    background-color: #f5f0dd;
+.img_food {
+    border-radius: 20px;
+}
+
+.resumo_case,
+.calc_detalhe {
     padding-bottom: 30px;
+    background-image: url('../img/bg_page.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .result_table th,
@@ -239,6 +275,7 @@ input[type=number] {
     font-size: 15px;
     font-weight: bold;
     color: var(--primary-color);
+    height: 36px;
 }
 
 div.container.pt-4>div>div>a {
@@ -356,6 +393,12 @@ footer .logo-footer {
     border-radius: 22px;
     padding: 30px;
     position: relative;
+    margin-top: 64px;
+    background: #fff;
+}
+
+.col_trans {
+    background-color: transparent !important;
 }
 
 .table thead th,
@@ -366,13 +409,39 @@ footer .logo-footer {
     font-weight: bold;
 }
 
-.table thead th {
+.table thead th:nth-child(n) {
+    background-color: #1A171B;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.table thead th:nth-child(1) {
     background-color: #1A171B;
     color: #fff;
     font-family: 'Montserrat';
     font-size: 16px;
     text-align: center;
     border-radius: 10px 0 0 0;
+}
+
+.col_custo {
+    color: #fff;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.col_custo h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.col_custo p {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .table tbody td {
@@ -490,7 +559,7 @@ footer .logo-footer {
     font-size: 19px;
 }
 
-.resumo_case div:nth-child(2)>h4 {
+.resumo_case div:nth-child(2) h4 {
     border-bottom: var(--primary-color) 2px solid;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -502,20 +571,49 @@ footer .logo-footer {
 
 .max_text {
     color: var(--primary-color);
+    font-size: 31px;
+    font-weight: 900;
+}
+
+.divInterna {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 55px;
+    padding-left: 12px;
+}
+
+body>div.calculator_title>h2 {
+    position: relative;
+    display: inline;
+}
+
+body>div.calculator_title>h2:before {
+    position: absolute;
+    left: -60px;
+    top: -15px;
+    content: url(data:image/png;base64,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);
 }
 
 .value_text {
     color: #59C030;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 900;
 }
 
 .obj_text {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 35px;
 }
 
 .resumo_case>div>div.text-center.mt-4>a {
     font-size: 18px;
+}
+
+.resumo_case>div>div.text-center.mt-4>a:hover {
+    color: #fff !important;
+    background: #1A171B !important;
 }
 
 .titulo_result {
@@ -634,9 +732,18 @@ footer .logo-footer {
 
 .resumo_case .price_nutella img {
     position: absolute;
-    right: -15px;
-    top: 10px;
+    right: -35px;
+    top: -10px;
 }
+
+.resumo_case .row>div.row>div.col-md-6.text-center {
+    margin-top: -100px;
+}
+
+.resumo_case .row>div.row>div.col-md-6.text-center img {
+    width: 80%;
+}
+
 
 @media(max-width:767px) {
     .titulo {

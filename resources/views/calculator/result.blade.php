@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="page_title_division">
-    <h2 class="text-center w-100">Resumo financeiro</h2>
+    <h2 class="text-center w-100 font_32">Resumo financeiro</h2>
 </div>
 <div class="pt-4 resumo_case">
     <div style="padding: 0 5rem" class="container-fluid">
@@ -16,7 +16,11 @@
                     <tbody>
                         <tr>
                             <th>Total Nutella® (em gramas)</th>
-                            <td>{{$defaultResult['qtd_nutella_ideal']}}</td>
+                            <td class="p-0">
+                                <div style="border: 2px solid #E33530;width:100%; height: 50px; padding-right: 12px; border-top-right-radius: 20px;" class="d-flex justify-content-end align-items-center">
+                                    {{$defaultResult['qtd_nutella_ideal']}}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th>Custo total da receita</th>
@@ -82,8 +86,8 @@
                 </table>
             </div>
             <div class="result_table font-weight-bold col-md-6">
-                <h4 class="font-weight-bold">
-                    Resumo
+                <h4 class="">
+                    RESUMO
                 </h4>
                 <p class="obj_text">Se o seu objetivo
                     <br class="d-none d-md-block">
@@ -96,13 +100,13 @@
                     <span class="value_text">R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</span>
                 </p>
                 <div class="text-center">
-                    <img src="{{asset('img/box_nutella.png')}}" alt="nutella" class="img-fluid">
+                    <img src="{{asset('/img/' . $receita_selecionada->img)}}" alt="nutella" class="img-fluid img_food">
                 </div>
             </div>
         </div>
         <div class="mt-4 row">
             <div class="col-md-12">
-                <p class="obj_text font-weight-bold">
+                <p class="obj_text font-weight-normal">
                     <span class="max_text" style="margin-bottom:8px;display:inline-block">Você sabia?</span>
                     <br class="d-none d-md-block">
                     Que o consumidor brasileiro está disposto a pagar pelo menos
@@ -110,7 +114,9 @@
                     <span class="value_text" style="margin-top:6px;display:inline-block">R$ 2,00</span>
                     <b class="text-black">a mais</b> por uma receita preparada com Nutella?
                     <br class="d-none d-md-block">
-                    Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
+                    <span style="margin-top:6px;display:inline-block">
+                        Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
+                    </span>
                 </p>
             </div>
 
@@ -124,7 +130,7 @@
                 </div>
                 <div class="col-md-6 mt-3">
                     <span class="tag_result">Receita SEM Nutella</span>
-                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
+                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid d-block">
                     <div class="price">
                         <div class="price2">
                             R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}
