@@ -101,7 +101,7 @@ footer {
 
 .linha_custo {
     position: absolute;
-    top: -63px;
+    top: -65px;
     right: -2px;
 }
 
@@ -174,6 +174,10 @@ footer {
     border-radius: 10px 0 0 0;
 }
 
+.resumo_case table td{
+    padding: .75rem;
+}
+
 .box {
     width: 48%;
     display: flex;
@@ -219,7 +223,7 @@ footer {
 .result_table {
     max-width: 48%;
     background-color: #fff;
-    padding: 20px 2%;
+    padding: 28px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-left: auto;

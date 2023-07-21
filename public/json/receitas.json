@@ -9,28 +9,28 @@
             {
                 "tipo": "Base",
                 "ingredientes": [
-                    ["Cacau em Pó 100%", 2, 53.98, 0.11],
-                    ["Biscoito Maisena", 145, 18.95, 2.75],
-                    ["Raspas de 1 Limão Tahiti", 100, 4.87, 0.49],
-                    ["Noz Moscada em Pó", 1, 848.75, 0.85],
-                    ["Manteiga sem Sal", 84, 67.98, 5.71]
+                    ["Cacau em Pó 100%", "2g", 53.98, 0.11],
+                    ["Biscoito Maisena", "145g", 18.95, 2.75],
+                    ["Raspas de 1 Limão Tahiti", "100g", 4.87, 0.49],
+                    ["Noz Moscada em Pó", "1g", 848.75, 0.85],
+                    ["Manteiga sem Sal", "84g", 67.98, 5.71]
 
                 ]
             },
             {
                 "tipo": "Recheio",
                 "ingredientes": [
-                    ["Banana Prata Madura", 35, 13.48, 0.47 ],
-                    ["Creme de Leite Fresco (batido em ponto chantilly)", 134, 51.38, 6.88 ],
-                    ["Canela em Pó", 7,	 216.33, 1.51 ],
-                    ["Nutella", 60, 54.66, 3.28, true]
+                    ["Banana Prata Madura", "35g", 13.48, 0.47 ],
+                    ["Creme de Leite Fresco (batido em ponto chantilly)", "134g", 51.38, 6.88 ],
+                    ["Canela em Pó", "7g",	 216.33, 1.51 ],
+                    ["Nutella", "60g", 54.66, 3.28, true]
                 ]
             },
             {
                 "tipo": "Decoração / Cobertura",
                 "ingredientes": [
                     ["Chips de Banana", "3 unidades", 0.12, 0.00],
-                    ["Canela em Pó com açúcar", 5, 216.33, 1.08]
+                    ["Canela em Pó com açúcar", "5g", 216.33, 1.08]
                 ]
             }
         ],
@@ -51,24 +51,24 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Leite", 83, 5.59, 0.46],
-                    ["Antimofo", 3, 119.80, 0.36],
-                    ["Essência de baunilha", 33, 449.67, 14.84],
-                    ["Farinha de Trigo", 100, 6.99, 0.7],
-                    ["Amido de milho", 27, 21.98, 0.59],
-                    ["Óleo", 75, 7.98, 0.6],
-                    ["Açúcar 1", 83, 4.39, 0.36],
-                    ["Gemas de ovos", 100, 34, 3.4],
-                    ["Açúcar 2", 63,  4.39, 0.27],
-                    ["Claras", 333,  14.57, 4.85],
-                    ["Fermento químico", 3,  37.90, 0.11]
+                    ["Leite", "83g", 5.59, 0.46],
+                    ["Antimofo", "3g", 119.80, 0.36],
+                    ["Essência de baunilha", "33g", 449.67, 14.84],
+                    ["Farinha de Trigo", "100g", 6.99, 0.7],
+                    ["Amido de milho", "27g", 21.98, 0.59],
+                    ["Óleo", "75g", 7.98, 0.6],
+                    ["Açúcar 1", "83g", 4.39, 0.36],
+                    ["Gemas de ovos", "100g", 34, 3.4],
+                    ["Açúcar 2", "63g",  4.39, 0.27],
+                    ["Claras", "333g",  14.57, 4.85],
+                    ["Fermento químico", "3g",  37.90, 0.11]
                 ]
             },
             {
                 "tipo": "COBERTURA E DECORAÇÃO",
                 "ingredientes": [
-                    ["10 Morangos", 280, 23.80, 6.66],
-                    ["Nutella", 100, 54.66, 5.47, true] 
+                    ["10 Morangos", "280g", 23.80, 6.66],
+                    ["Nutella", "100g", 54.66, 5.47, true] 
                 ]
             }
         ],
@@ -89,19 +89,19 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Açúcar", 150, 4.39, 0.66], 
-                    ["Ovos - 3 unids", 165, 10.20, 1.68], 
-                    ["Manteiga sem sal", 150, 67.98, 10.20], 
-                    ["Farinha de trigo", 150, 6.99, 1.05], 
-                    ["Fermento em pó", 4, 37.90, 0.15]
+                    ["Açúcar", "150g", 4.39, 0.66], 
+                    ["Ovos - 3 unids", "165g", 10.20, 1.68], 
+                    ["Manteiga sem sal", "150g", 67.98, 10.20], 
+                    ["Farinha de trigo", "150g", 6.99, 1.05], 
+                    ["Fermento em pó", "4g", 37.90, 0.15]
 
                 ]
             },
             {
                 "tipo": "COBERTURA E DECORAÇÃO",
                 "ingredientes": [
-                    ["Granulado", 50, 13.49, 0.67], 
-                    ["Nutella", 160, 54.66, 8.75, true]
+                    ["Granulado", "50g", 13.49, 0.67], 
+                    ["Nutella", "160g", 54.66, 8.75, true]
                 ]
             }
         ],
@@ -122,32 +122,32 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Manteiga sem sal", 145, 67.98, 9.86],
-                    ["Biscoito maisena", 200, 18.95, 3.79]
+                    ["Manteiga sem sal", "145g", 67.98, 9.86],
+                    ["Biscoito maisena", "200g", 18.95, 3.79]
                 ]
             },
             {
                 "tipo": "RECHEIO",
                 "ingredientes": [
-                    ["Açúcar refinado", 240, 4.39, 1.05],
-                    ["Manteiga sem sal", 87, 67.98, 5.91],
-                    ["Ovos", 150, 10.20, 1.53],
-                    ["Gemas", 12, 34.00, 0.41],
-                    ["Creme de leite fresco", 24, 51.38, 1.23],
-                    ["Cream cheese", 600, 56.63, 33.98],
-                    ["Raspas de 1/2 limão", 100, 4.87, 0.49],
-                    ["Raspas de 1 laranja", 137, 7.18, 0.98],
-                    ["Essência de baunilha", 9, 449.67, 4.05]
+                    ["Açúcar refinado", "240g", 4.39, 1.05],
+                    ["Manteiga sem sal", "87g", 67.98, 5.91],
+                    ["Ovos", "150g", 10.20, 1.53],
+                    ["Gemas", "12g", 34.00, 0.41],
+                    ["Creme de leite fresco", "24g", 51.38, 1.23],
+                    ["Cream cheese", "600g", 56.63, 33.98],
+                    ["Raspas de 1/2 limão", "100g", 4.87, 0.49],
+                    ["Raspas de 1 laranja", "137g", 7.18, 0.98],
+                    ["Essência de baunilha", "9g", 449.67, 4.05]
                 ]
             },
             {
                 "tipo": "DECORAÇÃO OU COBERTURA",
                 "ingredientes": [
-                   ["6 amoras", 36, 105.30, 3.79], 
-                   ["20 mirtilos", 60, 60.38, 3.62], 
-                   ["6 framboesas", 24, 294.67, 7.07], 
-                   ["2 morangos", 56, 23.80, 1.33], 
-                   ["Nutella", 120, 54.66, 6.56, true]
+                   ["6 amoras", "36g", 105.30, 3.79], 
+                   ["20 mirtilos", "60g", 60.38, 3.62], 
+                   ["6 framboesas", "24g", 294.67, 7.07], 
+                   ["2 morangos", "56g", 23.80, 1.33], 
+                   ["Nutella", "120g", 54.66, 6.56, true]
                 ]
             }
         ],
@@ -168,15 +168,15 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Massa Choux", 20, 21.31, 0.43],
-                    ["Massa Doce", 10, 33.66, 0.34]
+                    ["Massa Choux", "20g", 21.31, 0.43],
+                    ["Massa Doce", "10g", 33.66, 0.34]
 
                 ]
             },
             {
                 "tipo": "Recheio",
                 "ingredientes": [
-                    ["Nutella", 60, 54.66, 3.28, true]
+                    ["Nutella", "60g", 54.66, 3.28, true]
                 ]
             }
         ],
@@ -197,26 +197,26 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                   ["Água", 100, 0.01, 0.00], 
-                   ["Leite", 100, 5.59, 0.56], 
-                   ["Manteiga sem Sal", 100, 67.98, 6.80], 
-                   ["Farinha de Trigo", 120, 6.99, 0.84], 
-                   ["Açúcar", 8, 4.39, 0.04], 
-                   ["Ovos", 200, 10.20, 2.04]
+                   ["Água", "100g", 0.01, 0.00], 
+                   ["Leite", "100g", 5.59, 0.56], 
+                   ["Manteiga sem Sal", "100g", 67.98, 6.80], 
+                   ["Farinha de Trigo", "120g", 6.99, 0.84], 
+                   ["Açúcar", "8g", 4.39, 0.04], 
+                   ["Ovos", "200g", 10.20, 2.04]
 
                 ]
             },
             {
                 "tipo": "Recheio",
                 "ingredientes": [
-                    ["Nutella", 400, 54.66, 21.86, true]
+                    ["Nutella", "400g", 54.66, 21.86, true]
                 ]
             },
             {
                 "tipo": "DECORAÇÂO ou COBERTURA",
                 "ingredientes": [
-                    ["Chocolate Meio Amargo Fracionado", 300, 26.59, 7.98],
-                    ["Avelãs Quebradas", 120, 85.98, 10.32]
+                    ["Chocolate Meio Amargo Fracionado", "300g", 26.59, 7.98],
+                    ["Avelãs Quebradas", "120g", 85.98, 10.32]
                 ]
             }
         ],
@@ -237,20 +237,20 @@
             {
                 "tipo": "Massa",
                 "ingredientes": [
-                    ["Farinha de trigo", 250,  7.00,  1.75],
-                    ["Fermento biológico", 8,  45.01,  0.36],
-                    ["Água", 70, 0.0,  0.01],
-                    ["Sal", 5,  2.98,  0.01],
-                    ["Manteiga sem sal", 10,  40.24,  0.40],
-                    ["Leite integral", 70,  7.12,  0.50],
-                    ["Açúcar", 30,  4.54,  0.14]
+                    ["Farinha de trigo", "250g",  7.00,  1.75],
+                    ["Fermento biológico", "8g",  45.01,  0.36],
+                    ["Água", "70g", 0.0,  0.01],
+                    ["Sal", "5g",  2.98,  0.01],
+                    ["Manteiga sem sal", "10g",  40.24,  0.40],
+                    ["Leite integral", "70g",  7.12,  0.50],
+                    ["Açúcar", "30g",  4.54,  0.14]
                 ]
             },
             {
                 "tipo": "Recheio",
                 "ingredientes": [
-                    ["Manteiga sem sal", 140, 40.24, 5.63],
-                    [ "Nutella", 140, 55.00, 7.70, true] 
+                    ["Manteiga sem sal", "140g", 40.24, 5.63],
+                    [ "Nutella", "140g", 55.00, 7.70, true] 
                 ]
             }
         ],
@@ -272,26 +272,26 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["1 Gema de Ovo", 18, 34.00, 0.61],
-                    ["Açúcar", 85, 4.39, 0.37],
-                    ["4 Ovos", 220, 10.20, 2.24],
-                    ["Manteiga sem Sal", 30, 67.98, 2.04],
-                    ["Farinha de Trigo Mole", 95, 6.99, 0.66],
-                    ["Sal", 1.5, 2.55, 0.00],
-                    ["Farinha de Avelã", 160, 109.95, 17.59],
-                    ["Natas", 20, 63.30, 1.27],
-                    ["Casca de Laranja Raspada", 2, 1.03, 1.03],
-                    ["Casca de Limão Raspada", 1, 2.67, 2.67]
+                    ["1 Gema de Ovo", "18g", 34.00, 0.61],
+                    ["Açúcar", "85g", 4.39, 0.37],
+                    ["4 Ovos", "220g", 10.20, 2.24],
+                    ["Manteiga sem Sal", "30g", 67.98, 2.04],
+                    ["Farinha de Trigo Mole", "95g", 6.99, 0.66],
+                    ["Sal", "1.5g", 2.55, 0.00],
+                    ["Farinha de Avelã", "160g", 109.95, 17.59],
+                    ["Natas", "20g", 63.30, 1.27],
+                    ["Casca de Laranja Raspada", "2g", 1.03, 1.03],
+                    ["Casca de Limão Raspada", "1g", 2.67, 2.67]
                 ]
             },
             {
                 "tipo": "COBERTURA E DECORAÇÃO",
                 "ingredientes": [
-                    ["5 Avelãs", 50, 85.98, 4.30],
-                    ["2 Morangos", 15, 23.80, 0.36],
-                    ["Banana", 20, 13.48, 0.27],
-                    ["Kiwi", 20, 32.30, 0.65],
-                    ["Nutella", 150, 54.66, 8.20, true]
+                    ["5 Avelãs", "50g", 85.98, 4.30],
+                    ["2 Morangos", "15g", 23.80, 0.36],
+                    ["Banana", "20g", 13.48, 0.27],
+                    ["Kiwi", "20g", 32.30, 0.65],
+                    ["Nutella", "150g", 54.66, 8.20, true]
                 ]
             }
         ],
@@ -312,20 +312,20 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Açúcar", 300, 4.39, 1.32],
-                    ["Creme de Leite Fresco", 400, 51.38, 20.55],
-                    ["Leite", 500, 5.59, 2.80],
-                    ["Folhas de Gelatina - 14 folhas", 14, 3.60, 50.40],
+                    ["Açúcar", "300g", 4.39, 1.32],
+                    ["Creme de Leite Fresco", "400g", 51.38, 20.55],
+                    ["Leite", "500g", 5.59, 2.80],
+                    ["Folhas de Gelatina - 14 folhas", "14g", 3.60, 50.40],
                     ["Fava de Baunilha - 1 unid", "1 unidade", 23.00, 23.00]
                 ]
             },
             {
                 "tipo": "DECORAÇÃO OU COBERTURA",
                 "ingredientes": [
-                    ["Creme de Leite Batido", 250, 51.38, 12.85],
-                    ["Rhum", 30, 30.99, 0.93],
-                    ["Morangos", 15, 23.80, 10.00],
-                    ["Nutella", 50, 54.66, 2.73, true]
+                    ["Creme de Leite Batido", "250g", 51.38, 12.85],
+                    ["Rhum", "30g", 30.99, 0.93],
+                    ["Morangos", "15g", 23.80, 10.00],
+                    ["Nutella", "50g", 54.66, 2.73, true]
                 ]
             }
         ],
@@ -346,21 +346,21 @@
             {
                 "tipo": "MASSA",
                 "ingredientes": [
-                    ["Polvilho doce ", 250, 9.00, 2.25],
-                    ["Polvilho azedo", 250, 9.00, 2.25],
-                    ["Água ", 125, 0.01, 0.00],
-                    ["Leite integral ", 125, 7.00, 0.88],
-                    ["Óleo vegetal ", 100, 8.00, 0.80],
-                    ["Sal ", 8, 2.98, 0.02],
-                    ["Ovos ", 150, 18.00, 2.70],
-                    ["Queijo minas curado", 300, 60.00, 18.00]
+                    ["Polvilho doce ", "250g", 9.00, 2.25],
+                    ["Polvilho azedo", "250g", 9.00, 2.25],
+                    ["Água ", "125g", 0.01, 0.00],
+                    ["Leite integral ", "125g", 7.00, 0.88],
+                    ["Óleo vegetal ", "100g", 8.00, 0.80],
+                    ["Sal ", "8g", 2.98, 0.02],
+                    ["Ovos ", "150g", 18.00, 2.70],
+                    ["Queijo minas curado", "300g", 60.00, 18.00]
 
                 ]
             },
             {
                 "tipo": "RECHEIO",
                 "ingredientes": [
-                    ["Nutella", 160, 54.66, 8.75, true]
+                    ["Nutella", "160g", 54.66, 8.75, true]
                 ]
             }
         ],
@@ -382,20 +382,20 @@
             {
                 "tipo": "MASSA",
                 "ingredientes": [
-                    ["Farinha de trigo", 250, 7.00, 1.75],
-                    ["Fermento biológico", 8, 45.01, 0.36],
-                    ["Água ", 70, 0.01, 0.00],
-                    ["Sal ", 5, 2.98, 0.01],
-                    ["Manteiga sem sal", 10, 40.24, 0.40],
-                    ["Leite integral ", 70, 7.12, 0.50],
-                    ["Açúcar", 30, 4.54, 0.14]
+                    ["Farinha de trigo", "250g", 7.00, 1.75],
+                    ["Fermento biológico", "8g", 45.01, 0.36],
+                    ["Água ", "70g", 0.01, 0.00],
+                    ["Sal ", "5g", 2.98, 0.01],
+                    ["Manteiga sem sal", "10g", 40.24, 0.40],
+                    ["Leite integral ", "70g", 7.12, 0.50],
+                    ["Açúcar", "30g", 4.54, 0.14]
                     
                 ]
             },
             {
                 "tipo": "RECHEIO ",
                 "ingredientes": [
-                    ["Nutella", 300, 54.66, 16.5, true]
+                    ["Nutella", "300g", 54.66, 16.5, true]
                 ]
             }
         ],
@@ -417,27 +417,27 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Farinha de Trigo", 333, 6.99, 2.33],
-                    ["Açúcar refinado", 40, 4.39, 0.18],
-                    ["sal", 7, 2.39, 0.02],
-                    ["Fermento seco", 5, 215.00, 1.08],
-                    ["ovos", 4, 0.51, 2.04],
-                    ["Manteiga sem sal", 166, 67.98, 11.28]
+                    ["Farinha de Trigo", "333g", 6.99, 2.33],
+                    ["Açúcar refinado", "40g", 4.39, 0.18],
+                    ["sal", "7g", 2.39, 0.02],
+                    ["Fermento seco", "5g", 215.00, 1.08],
+                    ["ovos", "4g", 0.51, 2.04],
+                    ["Manteiga sem sal", "166g", 67.98, 11.28]
                 ]
             },
             {
                 "tipo": "RECHEIO ",
                 "ingredientes": [
-                    ["2 ovos", 110, 10.20, 1.12],
-                    ["Leite", 200, 5.59, 1.12],
-                    ["Manteiga", 14, 67.98, 0.95],
-                    ["Açúcar", 10, 4.39, 0.04]
+                    ["2 ovos", "110g", 10.20, 1.12],
+                    ["Leite", "200g", 5.59, 1.12],
+                    ["Manteiga", "14g", 67.98, 0.95],
+                    ["Açúcar", "10g", 4.39, 0.04]
                 ]
             },
             {
                 "tipo": "DECORAÇÃO OU COBERTURA ",
                 "ingredientes": [
-                    ["Nutella", 1000, 54.66, 54.66, true]
+                    ["Nutella", "1000g", 54.66, 54.66, true]
                 ]
             }
         ],
@@ -458,14 +458,14 @@
             {
                 "tipo": "BASE",
                 "ingredientes": [
-                    ["Farinha de Tapioca", 80, 30.24, 2.42]
+                    ["Farinha de Tapioca", "80g", 30.24, 2.42]
                 ]
             },
             {
                 "tipo": "RECHEIO ",
                 "ingredientes": [
-                    [ "Nutella", 15, 55.00, 0.83, true],
-                    ["Morangos frescos picados ", 30, 23.00, 0.69 ]
+                    [ "Nutella", "15g", 55.00, 0.83, true],
+                    ["Morangos frescos picados ", "30g", 23.00, 0.69 ]
                 ]
             }
         ],
