@@ -12,36 +12,43 @@
         <table class="table table-striped">
             <!-- d-flex TITULOS -->
             <thead class="titulos">
+                <tr class="linha_custo">
+                    <th colspan="2" class="col_trans"></th>
+                    <th colspan="2" class="col_custo">
+                        <h2>Custo do ingrediente R$</h2>
+                        <p>*Custos estimados, base cidade de São Paulo, junho 2023.</p>
+                    </th>
+                </tr>
                 <tr>
                     <th>
                         Ingredientes
                     </th>
                     <th>
-                        Peso Líquido <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Quantidade do pacote/unidade.<br>Esta relacionado com o campo<br><b>Valor do Pacote <i class='fa fa-arrow-right'></i></b>"></i>
+                        Peso líquido (g)
                     </th>
                     <th>
-                        Unitário <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Quantidade do pacote/unidade.<br>Esta relacionado com o campo<br><b>Valor do Pacote <i class='fa fa-arrow-right'></i></b>"></i>
+                        Por quilo
                     </th>
                     <th>
-                        Bruto <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Quantidade do pacote/unidade.<br>Esta relacionado com o campo<br><b>Valor do Pacote <i class='fa fa-arrow-right'></i></b>"></i>
+                        Receita Total
                     </th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($receita_selecionada->receita as $row)
-                    <tr class="px-2 py-2">
-                        <td class="calc_base" colspan="4">
-                            <h6 class="m-0">{{ $row->tipo }}</h6>
-                        </td>
-                    </tr>
-                    @foreach($row->ingredientes as $ingredientes)
-                    <tr>
-                        <td class="pl-5">{{$ingredientes[0]}}</td>
-                        <td>{{$ingredientes[1]}}</td>
-                        <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
-                        <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
-                    </tr>
-                    @endforeach
+                <tr class="px-2 py-2">
+                    <td class="calc_base" colspan="4">
+                        <h6 class="m-0">{{ $row->tipo }}</h6>
+                    </td>
+                </tr>
+                @foreach($row->ingredientes as $ingredientes)
+                <tr>
+                    <td class="pl-5">{{$ingredientes[0]}}</td>
+                    <td>{{$ingredientes[1]}}</td>
+                    <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
+                    <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
+                </tr>
+                @endforeach
                 @endforeach
             </tbody>
         </table>

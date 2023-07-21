@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="page_title_division">
-    <h2 class="text-center w-100">Resumo financeiro</h2>
+    <h2 class="text-center w-100 font_32">Resumo financeiro</h2>
 </div>
 <div class="pt-4 resumo_case">
     <div style="padding: 0 5rem" class="container-fluid">
@@ -51,10 +51,6 @@
                             <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
                         </tr>
                         <tr>
-                            <th>PREÇO FINAL DEFINIDO</th>
-                            <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
-                        </tr>
-                        <tr>
                             <th>CMV REAL (%)</th>
                             <td>{{number_format($defaultResult['cmv_real'] * 100, 2)}}%</td>
                         </tr>
@@ -82,8 +78,8 @@
                 </table>
             </div>
             <div class="result_table font-weight-bold col-md-6">
-                <h4 class="font-weight-bold">
-                    Resumo
+                <h4 class="">
+                    RESUMO
                 </h4>
                 <p class="obj_text">Se o seu objetivo
                     <br class="d-none d-md-block">
