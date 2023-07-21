@@ -54,7 +54,7 @@
             <div class="col-md-12 d-flex justify-content-center align-items-end">
                 <button class="btn btn-dark btn_primary font-weight-bold px-5" id="btnCalcular">
                     Ir para a análise financeira
-                    <img src="<?= asset('/img/icon3.png'); ?>" alt="icon" class="img_btn">
+                    <img src="{{asset('/img/icon3.png')}}" alt="icon" class="img_btn">
                 </button>
             </div>
         </div>

@@ -16,7 +16,7 @@
                     <tbody>
                         <tr>
                             <th>Total Nutella® (em gramas)</th>
-                            <td>{{number_format($defaultResult['qtd_nutella_ideal'],0)}}g</td>
+                            <td>{{$defaultResult['qtd_nutella_ideal']}}</td>
                         </tr>
                         <tr>
                             <th>CUSTO TOTAL DA RECEITA</th>
@@ -44,19 +44,19 @@
                         </tr>
                         <tr>
                             <th>CMV META (%)</th>
-                            <td>{{number_format($defaultResult['cmv_meta'] * 100, 2)}}%</td>
+                            <td>{{number_format($defaultResult['cmv_meta'] * 100, 0)}}%</td>
                         </tr>
                         <tr>
                             <th>PREÇO DE VENDA MÍNIMO</th>
                             <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <th>PREÇO FINAL DEFINIDO</th>
                             <td>R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <th>CMV REAL (%)</th>
-                            <td>{{number_format($defaultResult['cmv_real'] * 100, 2)}}%</td>
+                            <td>{{number_format($defaultResult['cmv_real'] * 100, 0)}}%</td>
                         </tr>
                         <tr>
                             <th>MARGEM DE CONTRIBUIÇÃO (R$)</th>
@@ -64,11 +64,11 @@
                         </tr>
                         <tr style="border-bottom: 20px solid #fff;">
                             <th>MARGEM DE CONTRIBUIÇÃO (%)</th>
-                            <td>{{number_format($defaultResult['margem_contribuicao_porcentagem'] * 100,2)}}%</td>
+                            <td>{{number_format($defaultResult['margem_contribuicao_porcentagem'] * 100,0)}}%</td>
                         </tr>
                         <tr style="border-top: 20px solid #fff;">
                             <th>Markup (%)</th>
-                            <td>{{number_format($defaultResult['markup'] * 100,2)}}%</td>
+                            <td>{{number_format($defaultResult['markup'] * 100,0)}}%</td>
                         </tr>
                         <!-- <tr>
                             <th>Margem bruta</th>
@@ -103,13 +103,14 @@
         <div class="mt-4 row">
             <div class="col-md-12">
                 <p class="obj_text font-weight-bold">
-                    <span class="max_text">Você sabia?</span>
+                    <span class="max_text" style="margin-bottom:8px;display:inline-block">Você sabia?</span>
                     <br class="d-none d-md-block">
-                    Você sabia? Que o consumidor brasileiro está disposto a pagar pelo menos
+                    Que o consumidor brasileiro está disposto a pagar pelo menos
                     <br class="d-none d-md-block">
-                    <span class="value_text">R$ 2,00</span>
+                    <span class="value_text" style="margin-top:6px;display:inline-block">R$ 2,00</span>
                     <b class="text-black">a mais</b> por uma receita preparada com Nutella?
                     <br class="d-none d-md-block">
+                    Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
                 </p>
             </div>
 
