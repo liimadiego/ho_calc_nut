@@ -6,9 +6,6 @@
 <h2 class="subtitle text-center w-100 montserrat font-weight-bold mb-0 mt-3">Para começar, selecione a receita que se<br class="d-none d-md-block" /> encaixa perfeitamente no seu menu.</h2>
 <div class="container pt-4">
     <div class="row">
-        <div class="col-12">
-            <h3 class="title_panificacao montserrat">Panificação</h3>
-        </div>
         @foreach($receitas_json as $receita)
         <div class="col-md-4 mb-4">
             <a href="{{ route('calculadora.calculator', $receita->id) }}">

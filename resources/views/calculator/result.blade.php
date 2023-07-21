@@ -16,7 +16,11 @@
                     <tbody>
                         <tr>
                             <th>Total Nutella® (em gramas)</th>
-                            <td>{{$defaultResult['qtd_nutella_ideal']}}</td>
+                            <td class="p-0">
+                                <div style="border: 2px solid #E33530;width:100%; height: 50px; padding-right: 12px; border-top-right-radius: 20px;" class="d-flex justify-content-end align-items-center">
+                                    {{$defaultResult['qtd_nutella_ideal']}}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th>CUSTO TOTAL DA RECEITA</th>
@@ -96,7 +100,7 @@
                     <span class="value_text">R${{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}</span>
                 </p>
                 <div class="text-center">
-                    <img src="{{asset('img/box_nutella.png')}}" alt="nutella" class="img-fluid">
+                    <img src="{{asset('/img/' . $receita_selecionada->img)}}" alt="nutella" class="img-fluid img_food">
                 </div>
             </div>
         </div>
@@ -124,7 +128,7 @@
                 </div>
                 <div class="col-md-6 mt-3">
                     <span class="tag_result">Receita SEM Nutella</span>
-                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid">
+                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid d-block">
                     <div class="price">
                         <div class="price2">
                             R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}

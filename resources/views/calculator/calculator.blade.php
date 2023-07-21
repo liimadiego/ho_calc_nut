@@ -56,7 +56,7 @@
 
     </div>
     <!-- -->
-    <div class="calcular-preco" style="background: url('{{asset('/img/' . $receita_selecionada->img)}}')">
+    <div class="calcular-preco" style="background-image: url('{{asset('/img/' . $receita_selecionada->img)}}')">
         <div class="row w-100">
             <div class="col-md-12 d-flex justify-content-center align-items-end">
                 <button class="btn btn-dark btn_primary font-weight-bold px-5" id="btnCalcular">
@@ -94,8 +94,15 @@
             imgLogo.style.width = "100px"
             e.appendChild(imgLogo);
 
-            arrayNutella[i + 1].style.background = "white";
             arrayNutella[i + 1].style.color = "#1a171b";
+            arrayNutella[i + 1].setAttribute("style", "padding: 3px;color:rgb(26, 23, 27);background:#E33530;")
+
+            let divImg = document.createElement("div");
+            divImg.classList.add("divInterna");
+            divImg.textContent = arrayNutella[i + 1].textContent;
+            arrayNutella[i + 1].textContent = '';
+            arrayNutella[i + 1].appendChild(divImg);
+
             arrayNutella[i + 2].style.background = "#1a171b";
             arrayNutella[i + 3].style.background = "#1a171b";
         }
