@@ -152,10 +152,10 @@
             }
         ],
         "dados": {
-            "rendimento_kg": 0.829,
-            "peso_porcao_kg": 0.104,
+            "rendimento_kg": 1.275,
+            "peso_porcao_kg": 0.106,
             "cmv_meta_porcentagem":	0.3,
-            "preco_final": 9.65
+            "preco_final": 23.79
         }
     },
     {
@@ -250,7 +250,7 @@
                 "tipo": "Recheio",
                 "ingredientes": [
                     ["Manteiga sem sal", 140, 40.24, 5.63],
-                    ["NUTELLA", 140, 55.00, 7.70, true] 
+                    [ "Nutella", 140, 55.00, 7.70, true] 
                 ]
             }
         ],
@@ -277,7 +277,7 @@
                     ["4 Ovos", 220, 10.20, 2.24],
                     ["Manteiga sem Sal", 30, 67.98, 2.04],
                     ["Farinha de Trigo Mole", 95, 6.99, 0.66],
-                    ["Sal", 1,5, 2.55, 0.00],
+                    ["Sal", 1.5, 2.55, 0.00],
                     ["Farinha de Avelã", 160, 109.95, 17.59],
                     ["Natas", 20, 63.30, 1.27],
                     ["Casca de Laranja Raspada", 2, 1.03, 1.03],
@@ -292,7 +292,6 @@
                     ["Banana", 20, 13.48, 0.27],
                     ["Kiwi", 20, 32.30, 0.65],
                     ["Nutella", 150, 54.66, 8.20, true]
-
                 ]
             }
         ],
@@ -404,7 +403,7 @@
             "rendimento_kg": 0.743,
             "peso_porcao_kg": 0.074,
             "cmv_meta_porcentagem":	0.3,
-            "preco_final": 5.55
+            "preco_final": 6.55
         },
         "dados_sem_nutella":true
     },
@@ -465,7 +464,7 @@
             {
                 "tipo": "RECHEIO ",
                 "ingredientes": [
-                    ["NUTELLA", 15, 55.00, 0.83, true],
+                    [ "Nutella", 15, 55.00, 0.83, true],
                     ["Morangos frescos picados ", 30, 23.00, 0.69 ]
                 ]
             }
