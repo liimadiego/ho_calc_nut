@@ -4,7 +4,7 @@
         "chef": "Paulo Rocha",
         "nome_tecnico": "Banoffee de Nutella",
         "nome_venda": "Banoffee de Nutella",
-        "img": "receita (1).jpeg",
+        "img": "Banoffee.jpg",
         "receita": [
             {
                 "tipo": "Base",
@@ -46,7 +46,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Bolo chiffon de Baunilha com NUTELLA® e Morangos",
         "nome_venda": "Bolo chiffon de Baunilha com NUTELLA® e Morangos",
-        "img": "receita (1).jpeg",
+        "img": "Chiffon.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -73,8 +73,8 @@
             }
         ],
         "dados": {
-            "rendimento_kg": 0.785,
-            "peso_porcao_kg": 0.785,
+            "rendimento_kg": 1.600,
+            "peso_porcao_kg": 0.1,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 8.06
         }
@@ -84,7 +84,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Cake pops com NUTELLA®",
         "nome_venda": "Cake pops com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Pop Cake.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -106,10 +106,10 @@
             }
         ],
         "dados": {
-            "rendimento_kg": 1.275,
-            "peso_porcao_kg": 0.106,
+            "rendimento_kg": 0.829,
+            "peso_porcao_kg": 0.104,
             "cmv_meta_porcentagem":	0.3,
-            "preco_final": 23.79
+            "preco_final": 9.65
         }
     },
     {
@@ -117,7 +117,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Cheesecake com NUTELLA® e frutas vermelhas",
         "nome_venda": "Cheesecake com NUTELLA® e frutas vermelhas",
-        "img": "receita (1).jpeg",
+        "img": "Cheesecake.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -163,7 +163,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Choux com NUTELLA®",
         "nome_venda": "Choux com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Choux.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -192,7 +192,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Crockella com NUTELLA®",
         "nome_venda": "Crockella com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Carolina.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -232,7 +232,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Croissant com NUTELLA®",
         "nome_venda": "Croissant com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Croissant.jpg",
         "receita": [
             {
                 "tipo": "Massa",
@@ -259,14 +259,15 @@
             "peso_porcao_kg": 0.103,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 7.86
-        }
+        },
+        "dados_sem_nutella":true
     },
     {
         "id": 8,
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Mini torres de bolo com NUTELLA®",
         "nome_venda": "Mini torres de bolo com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Torres.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -307,7 +308,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Panna cotta com NUTELLA® e morango",
         "nome_venda": "Panna cotta com NUTELLA® e morango",
-        "img": "receita (1).jpeg",
+        "img": "Panacotta.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -341,7 +342,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Pão de queijo com NUTELLA®",
         "nome_venda": "Pão de queijo com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Pão de Queijo.jpg",
         "receita": [
             {
                 "tipo": "MASSA",
@@ -369,14 +370,15 @@
             "peso_porcao_kg": 0.046,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 3.71
-        }
+        },
+        "dados_sem_nutella":true
     },
     {
         "id": 11,
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Pão na Chapa com NUTELLA",
         "nome_venda": "Pão na Chapa com NUTELLA",
-        "img": "receita (1).jpeg",
+        "img": "Pao na Chapa.jpg",
         "receita": [
             {
                 "tipo": "MASSA",
@@ -403,14 +405,15 @@
             "peso_porcao_kg": 0.074,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 5.55
-        }
+        },
+        "dados_sem_nutella":true
     },
     {
         "id": 12,
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Rabanada com NUTELLA®",
         "nome_venda": "Rabanada com NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Rabanada.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -451,7 +454,7 @@
         "chef": "CHEF PAULO ROCHA",
         "nome_tecnico": "Tapioca com morango e NUTELLA®",
         "nome_venda": "Tapioca com morango e NUTELLA®",
-        "img": "receita (1).jpeg",
+        "img": "Tapioca.jpg",
         "receita": [
             {
                 "tipo": "BASE",
@@ -472,6 +475,7 @@
             "peso_porcao_kg": 0.125,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 13.11
-        }
+        },
+        "dados_sem_nutella":true
     }
 ]

@@ -62,10 +62,22 @@
                             <th>MARGEM DE CONTRIBUIÇÃO (R$)</th>
                             <td>R${{number_format($defaultResult['margem_contribuicao_real'],2,",",".")}}</td>
                         </tr>
-                        <tr>
+                        <tr style="border-bottom: 20px solid #fff;">
                             <th>MARGEM DE CONTRIBUIÇÃO (%)</th>
                             <td>{{number_format($defaultResult['margem_contribuicao_porcentagem'] * 100,2)}}%</td>
                         </tr>
+                        <tr style="border-top: 20px solid #fff;">
+                            <th>Markup (%)</th>
+                            <td>{{number_format($defaultResult['markup'] * 100,2)}}%</td>
+                        </tr>
+                        <!-- <tr>
+                            <th>Margem bruta</th>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td>X</td>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -139,7 +151,7 @@
             <!-- ===== SITUACIONAL ===== -->
         </div>
         <div class="text-center mt-4">
-            <a class="btn btn_primary font-weight-bold px-2 pl-4" href="{{route('calculadora.index')}}">Ver mais receitas <img src="http://local.nutella/img/icon4.png" alt="icon" class="img_btn"></a>
+            <a class="btn btn_primary font-weight-bold px-2 pl-4" href="{{route('calculadora.index')}}">Ver mais receitas <img src="{{asset('img/icon4.png')}}" alt="icon" class="img_btn"></a>
         </div>
     </div>
 </div>

@@ -29,19 +29,19 @@
             </thead>
             <tbody>
                 @foreach($receita_selecionada->receita as $row)
-                <tr class="px-2 py-2">
-                    <td class="calc_base" colspan="4">
-                        <h6 class="m-0">{{ $row->tipo }}</h6>
-                    </td>
-                </tr>
-                @foreach($row->ingredientes as $ingredientes)
-                <tr>
-                    <td class="pl-5">{{$ingredientes[0]}}</td>
-                    <td>{{$ingredientes[1]}}</td>
-                    <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
-                    <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
-                </tr>
-                @endforeach
+                    <tr class="px-2 py-2">
+                        <td class="calc_base" colspan="4">
+                            <h6 class="m-0">{{ $row->tipo }}</h6>
+                        </td>
+                    </tr>
+                    @foreach($row->ingredientes as $ingredientes)
+                    <tr>
+                        <td class="pl-5">{{$ingredientes[0]}}</td>
+                        <td>{{$ingredientes[1]}}</td>
+                        <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
+                        <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
+                    </tr>
+                    @endforeach
                 @endforeach
             </tbody>
         </table>

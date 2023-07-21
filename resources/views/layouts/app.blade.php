@@ -41,7 +41,7 @@
         <img src="{{asset('img/logo-nutella.png')}}" />
     </header>
     <div class="calculator_title">
-        <h2 class="montserrat font-weight-bold mb-0">CALCULADORA</h2>
+        <h2 class="montserrat font-weight-bold mb-0">CALCULADORA DE CUSTOS E LUCROS</h2>
     </div>
 
     @yield('content')

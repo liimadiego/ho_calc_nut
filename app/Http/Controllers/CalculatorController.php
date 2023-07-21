@@ -106,12 +106,15 @@ class CalculatorController extends Controller
         $cmv_meta = $receita_selecionada->dados->cmv_meta_porcentagem;
         $preco_minimo_venda = $custo_porcao_cmv / $cmv_meta;
         $cmv_real = $custo_porcao_cmv / $receita_selecionada->dados->preco_final;
-        $margem_contribuicao_porcentagem = 1 - $cmv_real;
+        $margem_contribuicao_porcentagem = 1 - $cmv_real; //--------------------------------------------------------
         $margem_contribuicao_real = $receita_selecionada->dados->preco_final - $custo_porcao_cmv;
         $custo_total_receita = $calc;
         $dados_sem_nutella = $receita_selecionada->dados_sem_nutella ?? false;
+        $markup = ($preco_minimo_venda / $custo_porcao_cmv) - 1;
 
-        return compact('custo_total_receita','custo_por_kg', 'qtd_porcoes', 'custo_porcao_cmv', 'cmv_meta', 'preco_minimo_venda', 'cmv_real', 'margem_contribuicao_porcentagem', 'margem_contribuicao_real', 'qtd_nutella_ideal', 'dados_sem_nutella');
+        // dd($qtd_porcoes);
+
+        return compact('custo_total_receita','custo_por_kg', 'qtd_porcoes', 'custo_porcao_cmv', 'cmv_meta', 'preco_minimo_venda', 'cmv_real', 'margem_contribuicao_porcentagem', 'margem_contribuicao_real', 'qtd_nutella_ideal', 'dados_sem_nutella', 'markup');
     }
 
 }
