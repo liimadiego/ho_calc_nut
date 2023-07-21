@@ -74,6 +74,26 @@
     //     input_valor_bruto_nutella.value = resultado_conta
     // });
 </script>
+
+<script>
+    let arrayNutella = document.querySelectorAll("#calcularForm > div.monte-sua-receita tr:nth-child(n) td");
+
+    arrayNutella.forEach((e, i) => {
+        if (e.textContent === "Nutella") {
+            e.style.background = '#E33530';
+            e.textContent = "";
+            let imgLogo = document.createElement("img");
+            imgLogo.src = "https://i.ibb.co/SXmvrgz/logo-nutella.png";
+            imgLogo.style.width = "100px"
+            e.appendChild(imgLogo);
+
+            arrayNutella[i + 1].style.background = "white";
+            arrayNutella[i + 1].style.color = "#1a171b";
+            arrayNutella[i + 2].style.background = "#1a171b";
+            arrayNutella[i + 3].style.background = "#1a171b";
+        }
+    })
+</script>
 @else
 <div style="display:flex;justify-content:center;align-items:center;height:80vh;width:100%">
     <h2 class="display-4">Receita não encontrada</h2>
