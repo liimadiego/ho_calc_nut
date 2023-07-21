@@ -559,7 +559,7 @@ footer .logo-footer {
     font-size: 19px;
 }
 
-.resumo_case div:nth-child(2)>h4 {
+.resumo_case div:nth-child(2) h4 {
     border-bottom: var(--primary-color) 2px solid;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -609,6 +609,11 @@ body>div.calculator_title>h2:before {
 
 .resumo_case>div>div.text-center.mt-4>a {
     font-size: 18px;
+}
+
+.resumo_case>div>div.text-center.mt-4>a:hover {
+    color: #fff !important;
+    background: #1A171B !important;
 }
 
 .titulo_result {
