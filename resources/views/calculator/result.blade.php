@@ -106,7 +106,7 @@
         </div>
         <div class="mt-4 row">
             <div class="col-md-12">
-                <p class="obj_text font-weight-bold">
+                <p class="obj_text font-weight-normal">
                     <span class="max_text" style="margin-bottom:8px;display:inline-block">Você sabia?</span>
                     <br class="d-none d-md-block">
                     Que o consumidor brasileiro está disposto a pagar pelo menos
@@ -114,7 +114,9 @@
                     <span class="value_text" style="margin-top:6px;display:inline-block">R$ 2,00</span>
                     <b class="text-black">a mais</b> por uma receita preparada com Nutella?
                     <br class="d-none d-md-block">
-                    Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
+                    <span style="margin-top:6px;display:inline-block">
+                        Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
+                    </span>
                 </p>
             </div>
 

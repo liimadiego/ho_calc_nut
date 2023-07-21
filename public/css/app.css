@@ -236,9 +236,13 @@ footer {
     border-radius: 20px;
 }
 
-.resumo_case {
-    background-color: #f5f0dd;
+.resumo_case,
+.calc_detalhe {
     padding-bottom: 30px;
+    background-image: url('../img/bg_page.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .result_table th,
@@ -390,6 +394,7 @@ footer .logo-footer {
     padding: 30px;
     position: relative;
     margin-top: 64px;
+    background: #fff;
 }
 
 .col_trans {
@@ -599,6 +604,7 @@ body>div.calculator_title>h2:before {
 
 .obj_text {
     font-size: 28px;
+    line-height: 35px;
 }
 
 .resumo_case>div>div.text-center.mt-4>a {
@@ -721,12 +727,12 @@ body>div.calculator_title>h2:before {
 
 .resumo_case .price_nutella img {
     position: absolute;
-    right: -15px;
-    top: 10px;
+    right: -35px;
+    top: -10px;
 }
 
 .resumo_case .row>div.row>div.col-md-6.text-center {
-    margin-top: -130px;
+    margin-top: -100px;
 }
 
 .resumo_case .row>div.row>div.col-md-6.text-center img {

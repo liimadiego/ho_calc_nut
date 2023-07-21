@@ -5,68 +5,70 @@
 <div class="page_title_division">
     <h2 class="text-center w-100 montserrat font-weight-bold">Veja os detalhes da receita<br class="d-none d-md-block">selecionada.</h2>
 </div>
-<form method="GET" action="{{ route('calculadora.calculate', $receita_selecionada->id) }}" accept-charset="UTF-8" id="calcularForm" data-gtm-form-interact-id="0" class="container" style="min-height:80vh;display:flex;flex-direction:column;justify-content: center;">
-    @csrf
-    <div class="monte-sua-receita">
-        <h1 class="titulo text-left icon_title">{{$receita_selecionada->nome_venda}}<span class="r">®</span></h1>
-        <table class="table table-striped">
-            <!-- d-flex TITULOS -->
-            <thead class="titulos">
-                <tr class="linha_custo">
-                    <th colspan="2" class="col_trans"></th>
-                    <th colspan="2" class="col_custo">
-                        <h2>Custo do ingrediente R$</h2>
-                        <p>*Custos estimados, base cidade de São Paulo, junho 2023.</p>
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        Ingredientes
-                    </th>
-                    <th>
-                        Peso líquido (g)
-                    </th>
-                    <th>
-                        Por quilo
-                    </th>
-                    <th>
-                        Receita Total
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($receita_selecionada->receita as $row)
-                <tr class="px-2 py-2">
-                    <td class="calc_base" colspan="4">
-                        <h6 class="m-0">{{ $row->tipo }}</h6>
-                    </td>
-                </tr>
-                @foreach($row->ingredientes as $ingredientes)
-                <tr>
-                    <td class="pl-5">{{$ingredientes[0]}}</td>
-                    <td>{{$ingredientes[1]}}</td>
-                    <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
-                    <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
-                </tr>
-                @endforeach
-                @endforeach
-            </tbody>
-        </table>
-        <div class="case_error"></div>
+<section class="calc_detalhe">
+    <form method="GET" action="{{ route('calculadora.calculate', $receita_selecionada->id) }}" accept-charset="UTF-8" id="calcularForm" data-gtm-form-interact-id="0" class="container" style="min-height:80vh;display:flex;flex-direction:column;justify-content: center;">
+        @csrf
+        <div class="monte-sua-receita">
+            <h1 class="titulo text-left icon_title">{{$receita_selecionada->nome_venda}}<span class="r">®</span></h1>
+            <table class="table table-striped">
+                <!-- d-flex TITULOS -->
+                <thead class="titulos">
+                    <tr class="linha_custo">
+                        <th colspan="2" class="col_trans"></th>
+                        <th colspan="2" class="col_custo">
+                            <h2>Custo do ingrediente R$</h2>
+                            <p>*Custos estimados, base cidade de São Paulo, junho 2023.</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Ingredientes
+                        </th>
+                        <th>
+                            Peso líquido (g)
+                        </th>
+                        <th>
+                            Por quilo
+                        </th>
+                        <th>
+                            Receita Total
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($receita_selecionada->receita as $row)
+                    <tr class="px-2 py-2">
+                        <td class="calc_base" colspan="4">
+                            <h6 class="m-0">{{ $row->tipo }}</h6>
+                        </td>
+                    </tr>
+                    @foreach($row->ingredientes as $ingredientes)
+                    <tr>
+                        <td class="pl-5">{{$ingredientes[0]}}</td>
+                        <td>{{$ingredientes[1]}}</td>
+                        <td>R${{number_format($ingredientes[2],2,",",".")}}</td>
+                        <td>R${{number_format($ingredientes[3],2,",",".")}}</td>
+                    </tr>
+                    @endforeach
+                    @endforeach
+                </tbody>
+            </table>
+            <div class="case_error"></div>
 
-    </div>
-    <!-- -->
-    <div class="calcular-preco" style="background-image: url('{{asset('/img/' . $receita_selecionada->img)}}')">
-        <div class="row w-100">
-            <div class="col-md-12 d-flex justify-content-center align-items-end">
-                <button class="btn btn-dark btn_primary font-weight-bold px-5" id="btnCalcular">
-                    Ir para a análise financeira
-                    <img src="{{asset('/img/icon3.png')}}" alt="icon" class="img_btn">
-                </button>
+        </div>
+        <!-- -->
+        <div class="calcular-preco" style="background-image: url('{{asset('/img/' . $receita_selecionada->img)}}')">
+            <div class="row w-100">
+                <div class="col-md-12 d-flex justify-content-center align-items-end">
+                    <button class="btn btn-dark btn_primary font-weight-bold px-5" id="btnCalcular">
+                        Ir para a análise financeira
+                        <img src="{{asset('/img/icon3.png')}}" alt="icon" class="img_btn">
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</form>
+    </form>
+</section>
 <script>
     // Seleciona o campo de entrada
     // const qtd_nutella = document.getElementById('qtd_nutella');
