@@ -117,6 +117,7 @@
                         Nesse caso, esta porção poderia ser vendida por <span class="value_text">R$ {{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}</span>
                     </span>
                 </p>
+                <small>Fonte: Pesquisa realizada pela consultoria Galunion e instituto Qualibest com 550 consumidores das classes A, B e C<br class="d-none d-md-block">acima de 18 anos de idades, na regiões Sul e Sudeste em julho 2022</small>
             </div>
 
             <!-- ===== SITUACIONAL ===== -->
