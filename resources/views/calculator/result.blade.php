@@ -89,11 +89,10 @@
                 <h4 class="">
                     RESUMO
                 </h4>
-                <p class="obj_text">Se o seu objetivo
+                <p class="obj_text">Se o seu objetivo é atingir um
                     <br class="d-none d-md-block">
-                    é atingir um
-                    <br class="d-none d-md-block">
-                    <span class="max_text">CMV máximo de 30%</span>
+                    <span class="max_text">CMV (Custo da Mercadoria Vendida)
+                    <br class="d-none d-md-block"> máximo de 30%</span>
                     <br class="d-none d-md-block">
                     o preço de venda recomendado por porção deve ser de:
                     <br class="d-none d-md-block">
@@ -133,7 +132,7 @@
                     <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid d-block">
                     <div class="price">
                         <div class="price2">
-                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'],2,",",".")}}
+                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_sem_nutella'],2,",",".")}}
                         </div>
                     </div>
                 </div>

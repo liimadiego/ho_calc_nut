@@ -2,8 +2,8 @@
     {
         "id": 1,
         "chef": "Paulo Rocha",
-        "nome_tecnico": "Banoffee de Nutella",
-        "nome_venda": "Banoffee de Nutella",
+        "nome_tecnico": "Banoffee com Nutella®",
+        "nome_venda": "Banoffee com Nutella®",
         "img": "Banoffee.jpg",
         "receita": [
             {
@@ -130,7 +130,6 @@
                 "tipo": "RECHEIO",
                 "ingredientes": [
                     ["Açúcar refinado", "240g", 4.39, 1.05],
-                    ["Manteiga sem sal", "87g", 67.98, 5.91],
                     ["Ovos", "150g", 10.20, 1.53],
                     ["Gemas", "12g", 34.00, 0.41],
                     ["Creme de leite fresco", "24g", 51.38, 1.23],
@@ -260,7 +259,8 @@
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 7.86
         },
-        "dados_sem_nutella":true
+        "dados_sem_nutella":true,
+        "preco_sem_nutella": 4.19
     },
     {
         "id": 8,
@@ -370,7 +370,8 @@
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 3.71
         },
-        "dados_sem_nutella":true
+        "dados_sem_nutella":true,
+        "preco_sem_nutella": 2.8
     },
     {
         "id": 11,
@@ -405,7 +406,8 @@
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 6.55
         },
-        "dados_sem_nutella":true
+        "dados_sem_nutella":true,
+        "preco_sem_nutella": 2.59
     },
     {
         "id": 12,
@@ -443,7 +445,7 @@
         ],
         "dados": {
             "rendimento_kg": 1.750,
-            "peso_porcao_kg": 0.160,
+            "peso_porcao_kg": 0.175,
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 24.94
         }
@@ -475,6 +477,7 @@
             "cmv_meta_porcentagem":	0.3,
             "preco_final": 13.11
         },
-        "dados_sem_nutella":true
+        "dados_sem_nutella":true,
+        "preco_sem_nutella": 12.66
     }
 ]

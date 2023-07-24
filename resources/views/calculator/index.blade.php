@@ -23,7 +23,7 @@
             </div>
             @endforeach
             <div class="col-md-4 m-auto">
-                <a href="{{ route('calculadora.calculator', $receita->id) }}" class="btn_voltar montserrat">
+                <a href="http://localhost:8070/totem" class="btn_voltar montserrat">
                     Voltar para home
                     <span></span>
                 </a>
