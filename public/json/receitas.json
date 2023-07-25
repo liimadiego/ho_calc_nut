@@ -2,8 +2,8 @@
     {
         "id": 1,
         "chef": "Paulo Rocha",
-        "nome_tecnico": "Banoffee com Nutella®",
-        "nome_venda": "Banoffee com Nutella®",
+        "nome_tecnico": "Banoffee com NUTELLA®",
+        "nome_venda": "Banoffee com NUTELLA®",
         "img": "Banoffee.jpg",
         "receita": [
             {
@@ -189,8 +189,8 @@
     {
         "id": 6,
         "chef": "CHEF PAULO ROCHA",
-        "nome_tecnico": "Crockella com NUTELLA®",
-        "nome_venda": "Crockella com NUTELLA®",
+        "nome_tecnico": "Carolina com NUTELLA®",
+        "nome_venda": "Carolina com NUTELLA®",
         "img": "Carolina.jpg",
         "receita": [
             {

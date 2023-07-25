@@ -128,32 +128,34 @@
                         Veja na prática como isso funciona
                     </h2>
                 </div>
-                <div class="col-md-6 mt-3">
+                <div class="col-md-6 mt-3 px-5">
                     <span class="tag_result">Receita SEM Nutella</span>
-                    <img src="{{asset('img/pao.png')}}" alt="pao" class="img-fluid d-block">
-                    <div class="price">
-                        <div class="price2">
-                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_sem_nutella'],2,",",".")}}
+                    <div style="margin-top: 15px;width:100%;display:flex;justify-content:center">
+                        <div class="price">
+                            <div class="price2">
+                                R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_sem_nutella'],2,",",".")}}
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center mt-3 px-5">
                     <span class="tag_result2">
                         <span class="text_n">n</span>
                         Receita COM Nutella
                     </span>
-                    <span class="tag_result3">PORÇÃO DE {{$receita_selecionada->dados->peso_porcao_kg * 1000}}g</span>
-                    <img src="{{asset('img/nutella.png')}}" alt="nutella" class="img-fluid" />
-                    <div class="text-left price_nutella">
-                        <div class="price2">
-                            R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}
+                    <div style="margin-top: 15px;width:100%;display:flex;justify-content:center">
+                        <div class="text-left price_nutella">
+                            <div class="price2">
+                                R$<br class="d-none d-md-block">{{number_format($defaultResult['preco_minimo_venda'] + 2,2,",",".")}}
+                            </div>
+                            <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
                         </div>
-                        <img src="{{asset('img/icon6.png')}}" alt="icon" class="img-fluid" />
                     </div>
                     <br>
-                    <small><b>*Preço médio de venda em São Paulo - junho 23</b></small>
+                    
                 </div>
             </div>
+            <small style="text-align:center;width:100%"><b>*Preço médio de venda em São Paulo - junho 23</b></small>
             @endif
             <!-- ===== SITUACIONAL ===== -->
         </div>
